@@ -5,3 +5,5 @@ The goal of this project is to make a VR escape room game based on a real escape
 The game is developed in Unity by a team of 5 students of Turku University of Applied Sciences over the course of 10 weeks.
 
 Part of Turku UAS course Serious Games Project.
+
+Unity project version: 2021.3.21f1
