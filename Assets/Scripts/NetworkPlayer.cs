@@ -14,7 +14,7 @@ public class NetworkPlayer : NetworkBehaviour
     {
         DisableClientInput();
         tpArea = GameObject.Find("Floor").GetComponent<TeleportationArea>();
-        tpArea.teleportationProvider = gameObject.GetComponent<NetworkTeleportProvider>();
+        if(IsClient && IsOwner) tpArea.teleportationProvider = gameObject.GetComponent<NetworkTeleportProvider>();
     }
 
     public void DisableClientInput()
