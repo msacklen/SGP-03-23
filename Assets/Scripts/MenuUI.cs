@@ -12,6 +12,7 @@ public class MenuUI : MonoBehaviour
     [SerializeField] TMP_Text ipText;
     [SerializeField] NetworkManager netManager;
     [SerializeField] UnityTransport utp;
+    [SerializeField] GameObject xrRig;
     NetworkSceneManager SceneManager;
     string ip = "";
 
@@ -23,14 +24,17 @@ public class MenuUI : MonoBehaviour
     public void Host()
     {
         netManager.StartHost();
-        SceneManager.LoadScene("Lobby",LoadSceneMode.Single);
+        if(xrRig != null) Destroy(xrRig);
+        //SceneManager.LoadScene("Lobby",LoadSceneMode.Single);
+
     }
 
     public void Join()
     {
         utp.SetConnectionData(ip, 7777);
+        if(xrRig != null) Destroy(xrRig);
         netManager.StartClient();
-        SceneManager.LoadScene("Lobby", LoadSceneMode.Single);
+        //SceneManager.LoadScene("Lobby", LoadSceneMode.Single);
     }
 
     #region Keyboard inputs
