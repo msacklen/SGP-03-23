@@ -8,10 +8,13 @@ using UnityEngine.InputSystem.XR;
 public class NetworkPlayer : NetworkBehaviour
 {
     [SerializeField] Vector2 spawnArea = new Vector2(-10f, 10f);
+    TeleportationArea tpArea;
 
     public override void OnNetworkSpawn()
     {
         DisableClientInput();
+        tpArea = GameObject.Find("Floor").GetComponent<TeleportationArea>();
+        tpArea.teleportationProvider = gameObject.GetComponent<NetworkTeleportProvider>();
     }
 
     public void DisableClientInput()
@@ -25,7 +28,7 @@ public class NetworkPlayer : NetworkBehaviour
             TrackedPoseDriver clientHead = GetComponentInChildren<TrackedPoseDriver>();
             Camera clientCamera = GetComponentInChildren<Camera>();
 
-            clientCamera.enabled = false;
+            clientCamera.gameObject.SetActive(false);
             clientTeleportProvider.enableTeleportation = false;
             clientTurnProvider.enableTurnLeftRight = false;
             clientTurnProvider.enableTurnAround = false;
