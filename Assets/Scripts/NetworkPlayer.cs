@@ -8,13 +8,19 @@ using UnityEngine.InputSystem.XR;
 public class NetworkPlayer : NetworkBehaviour
 {
     [SerializeField] Vector2 spawnArea = new Vector2(-10f, 10f);
-    TeleportationArea tpArea;
+    GameObject[] floors;
 
     public override void OnNetworkSpawn()
     {
         DisableClientInput();
-        tpArea = GameObject.Find("Floor").GetComponent<TeleportationArea>();
-        if(IsClient && IsOwner) tpArea.teleportationProvider = gameObject.GetComponent<NetworkTeleportProvider>();
+        floors = GameObject.FindGameObjectsWithTag("Floor");
+        if (IsClient && IsOwner)
+        {
+            foreach (GameObject floor in floors)
+            {
+                floor.GetComponent<TeleportationArea>().teleportationProvider = GetComponent<TeleportationProvider>();
+            }
+        }
     }
 
     public void DisableClientInput()
