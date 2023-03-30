@@ -16,6 +16,6 @@ public class LobbySceneManager : NetworkBehaviour
 
     public void LoadApartment()
     {
-        NetworkManager.SceneManager.LoadScene("Lobby", LoadSceneMode.Single);
+        NetworkManager.SceneManager.LoadScene("Apartment", LoadSceneMode.Single);
     }
 }

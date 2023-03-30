@@ -198,6 +198,7 @@ GameObject:
   - component: {fileID: 218193281}
   - component: {fileID: 218193280}
   - component: {fileID: 218193283}
+  - component: {fileID: 218193284}
   m_Layer: 5
   m_Name: StartGame
   m_TagString: Untagged
@@ -269,7 +270,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 218193281}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 184078283}
+        m_TargetAssemblyTypeName: LobbySceneManager, Assembly-CSharp
+        m_MethodName: LoadApartment
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &218193281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -401,6 +414,19 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
+--- !u!65 &218193284
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218193278}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 160, y: 30, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &358148135
 GameObject:
   m_ObjectHideFlags: 0
