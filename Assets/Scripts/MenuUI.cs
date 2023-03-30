@@ -5,7 +5,6 @@ using TMPro;
 using UnityEngine.UI;
 using Unity.Netcode;
 using Unity.Netcode.Transports.UTP;
-using UnityEngine.SceneManagement;
 
 public class MenuUI : MonoBehaviour
 {
@@ -13,7 +12,6 @@ public class MenuUI : MonoBehaviour
     [SerializeField] NetworkManager netManager;
     [SerializeField] UnityTransport utp;
     [SerializeField] GameObject xrRig;
-    NetworkSceneManager SceneManager;
     string ip = "";
 
     public void Update()
@@ -25,8 +23,6 @@ public class MenuUI : MonoBehaviour
     {
         netManager.StartHost();
         if(xrRig != null) Destroy(xrRig);
-        //SceneManager.LoadScene("Lobby",LoadSceneMode.Single);
-
     }
 
     public void Join()
@@ -34,7 +30,6 @@ public class MenuUI : MonoBehaviour
         utp.SetConnectionData(ip, 7777);
         if(xrRig != null) Destroy(xrRig);
         netManager.StartClient();
-        //SceneManager.LoadScene("Lobby", LoadSceneMode.Single);
     }
 
     #region Keyboard inputs

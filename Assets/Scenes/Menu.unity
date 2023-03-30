@@ -1239,8 +1239,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ipText: {fileID: 284479770}
-  netManager: {fileID: 0}
-  utp: {fileID: 0}
+  netManager: {fileID: 56174127}
+  utp: {fileID: 56174126}
   xrRig: {fileID: 7429447734827563154}
 --- !u!1 &532574631
 GameObject:
