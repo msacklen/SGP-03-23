@@ -65,15 +65,24 @@ public class NetworkPlayer : NetworkBehaviour
 
     public void OnSelectGrabbable(SelectEnterEventArgs eventArgs)
     {
-        Debug.Log("Test1");
         if (IsClient && IsOwner)
         {
-            Debug.Log("Test2");
             NetworkObject grabbable = eventArgs.interactableObject.transform.GetComponent<NetworkObject>();
             if (grabbable != null)
             {
-                Debug.Log("Test3");
                 RequestGrabbableOwnershipServerRpc(OwnerClientId, grabbable);
+            }
+        }
+    }
+
+    public void OnDeselectGrabbable(SelectExitEventArgs eventArgs)
+    {
+        if (IsClient && IsOwner)
+        {
+            NetworkObject grabbable = eventArgs.interactableObject.transform.GetComponent<NetworkObject>();
+            if (grabbable != null)
+            {
+                RequestGrabbableOwnershipRemoveServerRpc(grabbable);
             }
         }
     }
@@ -81,11 +90,22 @@ public class NetworkPlayer : NetworkBehaviour
     [ServerRpc]
     void RequestGrabbableOwnershipServerRpc(ulong newOwnerId, NetworkObjectReference networkObjectReference)
     {
-        Debug.Log("Test4");
         if (networkObjectReference.TryGet(out NetworkObject networkObject))
         {
             networkObject.ChangeOwnership(newOwnerId);
-            Debug.Log("Test5");
+        }
+        else
+        {
+            Debug.LogError("Unable to change grabbable ownership");
+        }
+    }
+
+    [ServerRpc]
+    void RequestGrabbableOwnershipRemoveServerRpc(NetworkObjectReference networkObjectReference)
+    {
+        if (networkObjectReference.TryGet(out NetworkObject networkObject))
+        {
+            networkObject.RemoveOwnership();
         }
         else
         {
