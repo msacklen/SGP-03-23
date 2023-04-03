@@ -70,13 +70,13 @@ public class NetworkPlayer : NetworkBehaviour
             NetworkObject grabbable = eventArgs.interactableObject.transform.GetComponent<NetworkObject>();
             if (grabbable != null)
             {
-                RequestGrabbableOwnershipRpc(OwnerClientId, grabbable);
+                RequestGrabbableOwnershipServerRpc(OwnerClientId, grabbable);
             }
         }
     }
 
     [ServerRpc]
-    void RequestGrabbableOwnershipRpc(ulong newOwnerId, NetworkObjectReference networkObjectReference)
+    void RequestGrabbableOwnershipServerRpc(ulong newOwnerId, NetworkObjectReference networkObjectReference)
     {
         if(networkObjectReference.TryGet(out NetworkObject networkObject))
         {
