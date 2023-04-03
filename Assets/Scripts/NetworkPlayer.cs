@@ -62,4 +62,29 @@ public class NetworkPlayer : NetworkBehaviour
             }
         }
     }
+
+    public void OnSelectGrabbable(SelectEnterEventArgs eventArgs)
+    {
+        if (IsClient && IsOwner)
+        {
+            NetworkObject grabbable = eventArgs.interactableObject.transform.GetComponent<NetworkObject>();
+            if (grabbable != null)
+            {
+                RequestGrabbableOwnershipRpc(OwnerClientId, grabbable);
+            }
+        }
+    }
+
+    [ServerRpc]
+    void RequestGrabbableOwnershipRpc(ulong newOwnerId, NetworkObjectReference networkObjectReference)
+    {
+        if(networkObjectReference.TryGet(out NetworkObject networkObject))
+        {
+            networkObject.ChangeOwnership(newOwnerId);
+        }
+        else
+        {
+            Debug.LogError("Unable to change grabbable ownership");
+        }
+    }
 }
