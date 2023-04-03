@@ -12,7 +12,7 @@ public class MenuUI : MonoBehaviour
     [SerializeField] NetworkManager netManager;
     [SerializeField] UnityTransport utp;
     [SerializeField] GameObject xrRig;
-    string ip = "";
+    string ip = "172.24.18.67";
 
     public void Update()
     {
