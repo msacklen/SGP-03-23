@@ -30,6 +30,7 @@ public class NetworkPlayer : NetworkBehaviour
         if(sceneEvent.SceneEventType == SceneEventType.LoadEventCompleted && IsClient && IsOwner)
         {
             Debug.Log("New scene loaded");
+            floors = GameObject.FindGameObjectsWithTag("Floor");
             foreach (GameObject floor in floors)
             {
                 floor.GetComponent<TeleportationArea>().teleportationProvider = GetComponent<TeleportationProvider>();
