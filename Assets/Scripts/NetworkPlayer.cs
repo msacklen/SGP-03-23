@@ -65,11 +65,14 @@ public class NetworkPlayer : NetworkBehaviour
 
     public void OnSelectGrabbable(SelectEnterEventArgs eventArgs)
     {
+        Debug.Log("Test1");
         if (IsClient && IsOwner)
         {
+            Debug.Log("Test2");
             NetworkObject grabbable = eventArgs.interactableObject.transform.GetComponent<NetworkObject>();
             if (grabbable != null)
             {
+                Debug.Log("Test3");
                 RequestGrabbableOwnershipServerRpc(OwnerClientId, grabbable);
             }
         }
@@ -78,9 +81,11 @@ public class NetworkPlayer : NetworkBehaviour
     [ServerRpc]
     void RequestGrabbableOwnershipServerRpc(ulong newOwnerId, NetworkObjectReference networkObjectReference)
     {
-        if(networkObjectReference.TryGet(out NetworkObject networkObject))
+        Debug.Log("Test4");
+        if (networkObjectReference.TryGet(out NetworkObject networkObject))
         {
             networkObject.ChangeOwnership(newOwnerId);
+            Debug.Log("Test5");
         }
         else
         {
