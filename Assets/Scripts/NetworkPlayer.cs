@@ -21,6 +21,20 @@ public class NetworkPlayer : NetworkBehaviour
                 floor.GetComponent<TeleportationArea>().teleportationProvider = GetComponent<TeleportationProvider>();
             }
         }
+
+        NetworkManager.SceneManager.OnSceneEvent += SceneEvent;
+    }
+
+    void SceneEvent(SceneEvent sceneEvent)
+    {
+        if(sceneEvent.SceneEventType == SceneEventType.LoadEventCompleted && IsClient && IsOwner)
+        {
+            Debug.Log("New scene loaded");
+            foreach (GameObject floor in floors)
+            {
+                floor.GetComponent<TeleportationArea>().teleportationProvider = GetComponent<TeleportationProvider>();
+            }
+        }
     }
 
     public void DisableClientInput()
@@ -45,14 +59,6 @@ public class NetworkPlayer : NetworkBehaviour
                 controller.enableInputActions = false;
                 controller.enableInputTracking = false;
             }
-        }
-    }
-
-    private void Start()
-    {
-        if (IsClient && IsOwner)
-        {
-            transform.position = new Vector3(Random.Range(spawnArea.x, spawnArea.y), transform.position.y, Random.Range(spawnArea.x, spawnArea.y));
         }
     }
 }
