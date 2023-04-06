@@ -7,8 +7,6 @@ using UnityEngine.InputSystem.XR;
 
 public class NetworkPlayer : NetworkBehaviour
 {
-    [SerializeField] Vector2 spawnArea = new Vector2(-10f, 10f);
-    NetworkGrabbableObject grabbableController;
     GameObject[] floors;
 
     public override void OnNetworkSpawn()
@@ -94,7 +92,6 @@ public class NetworkPlayer : NetworkBehaviour
         if (networkObjectReference.TryGet(out NetworkObject networkObject))
         {
             networkObject.ChangeOwnership(newOwnerId);
-            grabbableController = networkObject.GetComponent<NetworkGrabbableObject>();
         }
         else
         {
@@ -108,7 +105,6 @@ public class NetworkPlayer : NetworkBehaviour
         if (networkObjectReference.TryGet(out NetworkObject networkObject))
         {
             networkObject.RemoveOwnership();
-            grabbableController.OnServerOwnershipClaim();
         }
         else
         {

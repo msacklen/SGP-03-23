@@ -25,8 +25,9 @@ public class NetworkGrabbableObject : NetworkBehaviour
 
     public void OnServerOwnershipClaim()
     {
-        if (IsOwnedByServer && IsHost)
+        if (IsOwnedByServer)
         {
+            rb.isKinematic = false;
             rb.velocity = velocity.Value;
         }
     }
