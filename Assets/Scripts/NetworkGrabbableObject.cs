@@ -27,8 +27,14 @@ public class NetworkGrabbableObject : NetworkBehaviour
     {
         if (IsOwnedByServer)
         {
-            rb.isKinematic = false;
-            rb.velocity = velocity.Value;
+            SetRigidbodyClientRpc(rb.velocity);
         }
+    }
+
+    [ClientRpc]
+    void SetRigidbodyClientRpc(Vector3 _velocity)
+    {
+        rb.isKinematic = false;
+        rb.velocity = _velocity;
     }
 }
