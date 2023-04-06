@@ -11,16 +11,16 @@ public class NetworkGrabbableObject : NetworkBehaviour
 
     private void Update()
     {
-        RequestVelocityUpdateServerRpc(rb.velocity);
+        if (IsOwner)
+        {
+            RequestVelocityUpdateServerRpc(rb.velocity);
+        }
     }
 
     [ServerRpc]
     void RequestVelocityUpdateServerRpc(Vector3 _velocity)
     {
-        if (IsOwner)
-        {
-            velocity.Value = _velocity;
-        }
+        velocity.Value = _velocity;
     }
 
     public void OnServerOwnershipClaim()
