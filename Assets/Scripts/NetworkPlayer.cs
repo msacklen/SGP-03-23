@@ -106,9 +106,9 @@ public class NetworkPlayer : NetworkBehaviour
         if (networkObjectReference.TryGet(out NetworkObject networkObject))
         {
             Rigidbody rigidbody = networkObject.GetComponent<Rigidbody>();
-            Vector3 rigidbodyVelocity = rigidbody.velocity;
+            NetworkVariable<Vector3> rigidbodyVelocity = new NetworkVariable<Vector3>(rigidbody.velocity);
             networkObject.RemoveOwnership();
-            rigidbody.velocity = rigidbodyVelocity;
+            rigidbody.velocity = rigidbodyVelocity.Value;
         }
         else
         {
