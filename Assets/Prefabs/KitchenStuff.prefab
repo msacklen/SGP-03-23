@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7695692227661622844}
   - component: {fileID: 3240766553413153473}
   - component: {fileID: 5531711194654133326}
+  - component: {fileID: 4455930938276843744}
   m_Layer: 0
   m_Name: "keitti\xF6nhylly.003"
   m_TagString: Untagged
@@ -83,6 +84,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4455930938276843744
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388725007518414615}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4065140548124977834, guid: 073ceb80b5b822a4ab85e462b232576d, type: 3}
 --- !u!1 &2034117305365063236
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,6 +109,7 @@ GameObject:
   - component: {fileID: 5706525566398852416}
   - component: {fileID: 9063390261694404731}
   - component: {fileID: 5505277353301307803}
+  - component: {fileID: 7511555342330498130}
   m_Layer: 0
   m_Name: "keitti\xF6nhylly.001"
   m_TagString: Untagged
@@ -166,6 +182,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7511555342330498130
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034117305365063236}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6842301910756840787, guid: 073ceb80b5b822a4ab85e462b232576d, type: 3}
 --- !u!1 &2365681776323348210
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,6 +207,7 @@ GameObject:
   - component: {fileID: 2412354342071393345}
   - component: {fileID: 5722598498342437772}
   - component: {fileID: 9089933743123184657}
+  - component: {fileID: 649715837284203411}
   m_Layer: 0
   m_Name: kahva.002
   m_TagString: Untagged
@@ -249,6 +280,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &649715837284203411
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2365681776323348210}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2653161550644702532, guid: 073ceb80b5b822a4ab85e462b232576d, type: 3}
 --- !u!1 &2599823482642003665
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,7 +303,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3413654859984415851}
-  - component: {fileID: 2942262876097039238}
   m_Layer: 0
   m_Name: KitchenStuff
   m_TagString: Untagged
@@ -291,19 +335,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
---- !u!65 &2942262876097039238
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2599823482642003665}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3037569161789913862
 GameObject:
   m_ObjectHideFlags: 0
@@ -315,6 +346,7 @@ GameObject:
   - component: {fileID: 7332545623453472896}
   - component: {fileID: 358165333322872575}
   - component: {fileID: 956127699972712429}
+  - component: {fileID: 1831742007652753083}
   m_Layer: 0
   m_Name: "keitti\xF6nhylly.002"
   m_TagString: Untagged
@@ -387,6 +419,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1831742007652753083
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3037569161789913862}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1867817734993624834, guid: 073ceb80b5b822a4ab85e462b232576d, type: 3}
 --- !u!1 &3303214172924356137
 GameObject:
   m_ObjectHideFlags: 0
@@ -398,6 +444,7 @@ GameObject:
   - component: {fileID: 7242986221694180785}
   - component: {fileID: 2582951073703466756}
   - component: {fileID: 5150236159756012377}
+  - component: {fileID: 2625178361636545919}
   m_Layer: 0
   m_Name: "keitti\xF6nkaappi.002"
   m_TagString: Untagged
@@ -470,6 +517,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2625178361636545919
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3303214172924356137}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4369683017885088459, guid: 073ceb80b5b822a4ab85e462b232576d, type: 3}
 --- !u!1 &6096063466054669797
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,6 +542,7 @@ GameObject:
   - component: {fileID: 3291304946947801294}
   - component: {fileID: 8469203004513512788}
   - component: {fileID: 7286843864167559801}
+  - component: {fileID: 3662259515228091658}
   m_Layer: 0
   m_Name: kahva
   m_TagString: Untagged
@@ -553,6 +615,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3662259515228091658
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6096063466054669797}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8510952259090562351, guid: 073ceb80b5b822a4ab85e462b232576d, type: 3}
 --- !u!1 &6611444343627956860
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,6 +640,7 @@ GameObject:
   - component: {fileID: 4632316342569538642}
   - component: {fileID: 3795286483841500539}
   - component: {fileID: 6507804999020284775}
+  - component: {fileID: 3150509990310717358}
   m_Layer: 0
   m_Name: "keitti\xF6nhylly.004"
   m_TagString: Untagged
@@ -636,6 +713,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3150509990310717358
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6611444343627956860}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7069173341838392822, guid: 073ceb80b5b822a4ab85e462b232576d, type: 3}
 --- !u!1 &6771720952828138066
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,6 +738,7 @@ GameObject:
   - component: {fileID: 7521962818184670204}
   - component: {fileID: 8339378719233424571}
   - component: {fileID: 1341299264462050083}
+  - component: {fileID: 7618054301200086209}
   m_Layer: 0
   m_Name: "keitti\xF6nkaappi"
   m_TagString: Untagged
@@ -719,6 +811,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7618054301200086209
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6771720952828138066}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3783402728723841489, guid: 073ceb80b5b822a4ab85e462b232576d, type: 3}
 --- !u!1 &7818558660595690686
 GameObject:
   m_ObjectHideFlags: 0
@@ -730,6 +836,7 @@ GameObject:
   - component: {fileID: 2712952209839205817}
   - component: {fileID: 7173038733809554241}
   - component: {fileID: 963366290127858501}
+  - component: {fileID: 477103769211821778}
   m_Layer: 0
   m_Name: kahva.001
   m_TagString: Untagged
@@ -802,6 +909,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &477103769211821778
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7818558660595690686}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3176258556427086136, guid: 073ceb80b5b822a4ab85e462b232576d, type: 3}
 --- !u!1 &8666778306958080898
 GameObject:
   m_ObjectHideFlags: 0
@@ -813,6 +934,7 @@ GameObject:
   - component: {fileID: 1624553547186079923}
   - component: {fileID: 3299070618318759681}
   - component: {fileID: 7933111494227396101}
+  - component: {fileID: 4259943229460966486}
   m_Layer: 0
   m_Name: "keitti\xF6nkaappi.001"
   m_TagString: Untagged
@@ -885,3 +1007,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4259943229460966486
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8666778306958080898}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6416202929874732309, guid: 073ceb80b5b822a4ab85e462b232576d, type: 3}

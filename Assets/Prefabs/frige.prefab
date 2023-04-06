@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4420072190233198581}
-  - component: {fileID: 4241820479252584476}
   m_Layer: 0
   m_Name: frige
   m_TagString: Untagged
@@ -37,19 +36,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &4241820479252584476
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3899150332371854671}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4940723343786018482
 GameObject:
   m_ObjectHideFlags: 0
@@ -61,6 +47,7 @@ GameObject:
   - component: {fileID: 2966036920151195417}
   - component: {fileID: 8879128806991520768}
   - component: {fileID: 4562337831153860428}
+  - component: {fileID: 3178214324669350472}
   m_Layer: 0
   m_Name: "kahvaj\xE4\xE4kaappi.001"
   m_TagString: Untagged
@@ -133,6 +120,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3178214324669350472
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4940723343786018482}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 702814592286996141, guid: dd89a2acdb4b9474587687ba92363842, type: 3}
 --- !u!1 &5689417140028310598
 GameObject:
   m_ObjectHideFlags: 0
@@ -144,6 +145,7 @@ GameObject:
   - component: {fileID: 6849351703705003112}
   - component: {fileID: 612179793565251558}
   - component: {fileID: 1260631062008166881}
+  - component: {fileID: 6864195143294188852}
   m_Layer: 0
   m_Name: "j\xE4\xE4kaappi"
   m_TagString: Untagged
@@ -216,6 +218,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6864195143294188852
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5689417140028310598}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7569073954879131104, guid: dd89a2acdb4b9474587687ba92363842, type: 3}
 --- !u!1 &6348320280720902139
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,6 +243,7 @@ GameObject:
   - component: {fileID: 5758092015907647069}
   - component: {fileID: 4381787779340239986}
   - component: {fileID: 4994742165111759154}
+  - component: {fileID: 1783811367071562049}
   m_Layer: 0
   m_Name: "j\xE4\xE4kaappiovi"
   m_TagString: Untagged
@@ -299,6 +316,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1783811367071562049
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6348320280720902139}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6507718415762066082, guid: dd89a2acdb4b9474587687ba92363842, type: 3}
 --- !u!1 &6847765736153909017
 GameObject:
   m_ObjectHideFlags: 0
@@ -310,6 +341,7 @@ GameObject:
   - component: {fileID: 4773075459245275661}
   - component: {fileID: 15319455282093835}
   - component: {fileID: 4541925178979642360}
+  - component: {fileID: 8035150550289316570}
   m_Layer: 0
   m_Name: "kahvaj\xE4\xE4kaappi"
   m_TagString: Untagged
@@ -382,6 +414,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8035150550289316570
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6847765736153909017}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3923102416604414173, guid: dd89a2acdb4b9474587687ba92363842, type: 3}
 --- !u!1 &8227525208445476390
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,6 +439,7 @@ GameObject:
   - component: {fileID: 4035705547030614249}
   - component: {fileID: 6205341721411851679}
   - component: {fileID: 5205381574488462525}
+  - component: {fileID: 845452024268325180}
   m_Layer: 0
   m_Name: "j\xE4\xE4kaappiovi.001"
   m_TagString: Untagged
@@ -465,3 +512,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &845452024268325180
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8227525208445476390}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 161022597364367033, guid: dd89a2acdb4b9474587687ba92363842, type: 3}

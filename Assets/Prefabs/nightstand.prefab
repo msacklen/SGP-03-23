@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2233695201532384556}
   - component: {fileID: 2953276800109855281}
   - component: {fileID: 8392665711676056009}
+  - component: {fileID: 3537537983197387629}
   m_Layer: 0
   m_Name: "y\xF6p\xF6yd\xE4nlaatikko.002"
   m_TagString: Untagged
@@ -83,6 +84,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3537537983197387629
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034731921197832519}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5894979164128562888, guid: 4dee30ed981383d4caea0bb504bdab1e, type: 3}
 --- !u!1 &6363716384438850374
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,6 +109,7 @@ GameObject:
   - component: {fileID: 1922971346634461754}
   - component: {fileID: 5993702664540202850}
   - component: {fileID: 525950872571170505}
+  - component: {fileID: 246297259176992858}
   m_Layer: 0
   m_Name: "y\xF6p\xF6yt\xE4"
   m_TagString: Untagged
@@ -166,6 +182,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &246297259176992858
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6363716384438850374}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6422341741461229951, guid: 4dee30ed981383d4caea0bb504bdab1e, type: 3}
 --- !u!1 &6724932371617512938
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,6 +207,7 @@ GameObject:
   - component: {fileID: 6018442145519366832}
   - component: {fileID: 4212096193127963051}
   - component: {fileID: 9062337751286177492}
+  - component: {fileID: 8540113685615332040}
   m_Layer: 0
   m_Name: "y\xF6p\xF6yd\xE4nlaatikko"
   m_TagString: Untagged
@@ -249,6 +280,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8540113685615332040
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6724932371617512938}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6410888275884084436, guid: 4dee30ed981383d4caea0bb504bdab1e, type: 3}
 --- !u!1 &7656335682031907684
 GameObject:
   m_ObjectHideFlags: 0
@@ -295,6 +340,7 @@ GameObject:
   - component: {fileID: 4040522232022814697}
   - component: {fileID: 9052489358309637320}
   - component: {fileID: 6476864834497731116}
+  - component: {fileID: 2090130404456550899}
   m_Layer: 0
   m_Name: "y\xF6p\xF6yd\xE4nlaatikko.001"
   m_TagString: Untagged
@@ -367,3 +413,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2090130404456550899
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7884490156133370168}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5478858742060423338, guid: 4dee30ed981383d4caea0bb504bdab1e, type: 3}

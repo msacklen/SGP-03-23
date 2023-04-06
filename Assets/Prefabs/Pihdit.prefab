@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5799341626343861666}
   - component: {fileID: 4032188458943295357}
   - component: {fileID: 6082457403051431258}
+  - component: {fileID: 8824505855890745306}
   m_Layer: 0
   m_Name: pihdit.002
   m_TagString: Untagged
@@ -83,6 +84,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8824505855890745306
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446807989047560988}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4810256441532953211, guid: e1ed9c6fe35bd8f44a98a8fa1bfd8093, type: 3}
 --- !u!1 &2769833931264857910
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,6 +109,7 @@ GameObject:
   - component: {fileID: 4285274860947440892}
   - component: {fileID: 1322911993424487822}
   - component: {fileID: 651567062184392424}
+  - component: {fileID: 2422999169627823409}
   m_Layer: 0
   m_Name: pihdit.004
   m_TagString: Untagged
@@ -166,6 +182,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2422999169627823409
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2769833931264857910}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3128954991780843447, guid: e1ed9c6fe35bd8f44a98a8fa1bfd8093, type: 3}
 --- !u!1 &3536537427950144174
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,6 +207,7 @@ GameObject:
   - component: {fileID: 8243789877494036522}
   - component: {fileID: 3611854930003118095}
   - component: {fileID: 7826650147791346780}
+  - component: {fileID: 8896404372563906921}
   m_Layer: 0
   m_Name: pihdit.001
   m_TagString: Untagged
@@ -249,6 +280,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8896404372563906921
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3536537427950144174}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6894463712509828385, guid: e1ed9c6fe35bd8f44a98a8fa1bfd8093, type: 3}
 --- !u!1 &8606679061316284258
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,6 +305,7 @@ GameObject:
   - component: {fileID: 2437421016179697069}
   - component: {fileID: 2558564753136844213}
   - component: {fileID: 5566550708057825324}
+  - component: {fileID: 1298126763637979225}
   m_Layer: 0
   m_Name: pihdit.003
   m_TagString: Untagged
@@ -332,6 +378,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1298126763637979225
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8606679061316284258}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1889287069837074103, guid: e1ed9c6fe35bd8f44a98a8fa1bfd8093, type: 3}
 --- !u!1 &8773521495937166104
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6034248601094358386}
   - component: {fileID: 6662020759542705825}
   - component: {fileID: 3681980965799605627}
+  - component: {fileID: 7642201923499584310}
   m_Layer: 0
   m_Name: lipasto
   m_TagString: Untagged
@@ -83,6 +84,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7642201923499584310
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135733579550907483}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1964147112200737341, guid: 0e774ce5e032aa2468c87e51fb07f7f4, type: 3}
 --- !u!1 &363695631605572392
 GameObject:
   m_ObjectHideFlags: 0
@@ -135,6 +150,7 @@ GameObject:
   - component: {fileID: 961404978081963616}
   - component: {fileID: 7605803269418140178}
   - component: {fileID: 4771975923943565664}
+  - component: {fileID: 6644483515917487778}
   m_Layer: 0
   m_Name: lipastokahva.003
   m_TagString: Untagged
@@ -207,6 +223,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6644483515917487778
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747869843827960759}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4669557605144646052, guid: 0e774ce5e032aa2468c87e51fb07f7f4, type: 3}
 --- !u!1 &1674166994603853256
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,6 +248,7 @@ GameObject:
   - component: {fileID: 1313884700566835355}
   - component: {fileID: 17380544438979558}
   - component: {fileID: 3783329610286804629}
+  - component: {fileID: 1557272646358094017}
   m_Layer: 0
   m_Name: lipastokahva
   m_TagString: Untagged
@@ -290,6 +321,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1557272646358094017
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674166994603853256}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1004380384926766375, guid: 0e774ce5e032aa2468c87e51fb07f7f4, type: 3}
 --- !u!1 &1830259595757809126
 GameObject:
   m_ObjectHideFlags: 0
@@ -301,6 +346,7 @@ GameObject:
   - component: {fileID: 4355307220959303636}
   - component: {fileID: 2856624640060348567}
   - component: {fileID: 6115581889235919112}
+  - component: {fileID: 8214275657494892788}
   m_Layer: 0
   m_Name: lipastolaatikko.003
   m_TagString: Untagged
@@ -373,6 +419,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8214275657494892788
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830259595757809126}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3860441948064861504, guid: 0e774ce5e032aa2468c87e51fb07f7f4, type: 3}
 --- !u!1 &3516114946748314348
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,6 +444,7 @@ GameObject:
   - component: {fileID: 8384455086376412386}
   - component: {fileID: 708952728645247657}
   - component: {fileID: 7744719386636015847}
+  - component: {fileID: 691717692104097648}
   m_Layer: 0
   m_Name: lipastolaatikko
   m_TagString: Untagged
@@ -456,6 +517,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &691717692104097648
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3516114946748314348}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8416546059432963478, guid: 0e774ce5e032aa2468c87e51fb07f7f4, type: 3}
 --- !u!1 &5708530431549557391
 GameObject:
   m_ObjectHideFlags: 0
@@ -467,6 +542,7 @@ GameObject:
   - component: {fileID: 6716705142216583986}
   - component: {fileID: 3231940961966106374}
   - component: {fileID: 8561842989052567344}
+  - component: {fileID: 502980616751685510}
   m_Layer: 0
   m_Name: lipastokahva.001
   m_TagString: Untagged
@@ -539,6 +615,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &502980616751685510
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5708530431549557391}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5008132472178884628, guid: 0e774ce5e032aa2468c87e51fb07f7f4, type: 3}
 --- !u!1 &6479807233279821380
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,6 +640,7 @@ GameObject:
   - component: {fileID: 7535607535941955671}
   - component: {fileID: 7229355155345228206}
   - component: {fileID: 5698256281052224080}
+  - component: {fileID: 713129162100671217}
   m_Layer: 0
   m_Name: lipastolaatikko.001
   m_TagString: Untagged
@@ -622,6 +713,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &713129162100671217
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6479807233279821380}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2852529034339182268, guid: 0e774ce5e032aa2468c87e51fb07f7f4, type: 3}
 --- !u!1 &7082018790221190947
 GameObject:
   m_ObjectHideFlags: 0
@@ -633,6 +738,7 @@ GameObject:
   - component: {fileID: 7687693118553795535}
   - component: {fileID: 9019473921015843694}
   - component: {fileID: 7691172655149353254}
+  - component: {fileID: 5715215506723555914}
   m_Layer: 0
   m_Name: lipastokahva.002
   m_TagString: Untagged
@@ -705,6 +811,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5715215506723555914
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7082018790221190947}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 980362746443320361, guid: 0e774ce5e032aa2468c87e51fb07f7f4, type: 3}
 --- !u!1 &7186053645117458515
 GameObject:
   m_ObjectHideFlags: 0
@@ -716,6 +836,7 @@ GameObject:
   - component: {fileID: 3501744427499207625}
   - component: {fileID: 6511969070948211107}
   - component: {fileID: 8949468808628373208}
+  - component: {fileID: 1399542773742787998}
   m_Layer: 0
   m_Name: lipastolaatikko.002
   m_TagString: Untagged
@@ -788,6 +909,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1399542773742787998
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7186053645117458515}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8300574256847724885, guid: 0e774ce5e032aa2468c87e51fb07f7f4, type: 3}
 --- !u!1 &7375598696292117885
 GameObject:
   m_ObjectHideFlags: 0
@@ -799,6 +934,7 @@ GameObject:
   - component: {fileID: 1550430887796280151}
   - component: {fileID: 5180282363343960490}
   - component: {fileID: 5318192743107057482}
+  - component: {fileID: 1037193541568265720}
   m_Layer: 0
   m_Name: lipastonjalat
   m_TagString: Untagged
@@ -871,3 +1007,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1037193541568265720
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7375598696292117885}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1059825893067406371, guid: 0e774ce5e032aa2468c87e51fb07f7f4, type: 3}

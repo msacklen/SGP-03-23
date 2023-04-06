@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 811517327912948024}
   - component: {fileID: 2513084161648770024}
   - component: {fileID: 11290614970986626}
+  - component: {fileID: 5914712553271994222}
   m_Layer: 0
   m_Name: pelituoli.002
   m_TagString: Untagged
@@ -83,6 +84,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5914712553271994222
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112870699432340606}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1597062303393640824, guid: ffced5848d8b45248883c36e9191f485, type: 3}
 --- !u!1 &2345913820710016514
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,6 +109,7 @@ GameObject:
   - component: {fileID: 5258962131238767315}
   - component: {fileID: 4383085482010509690}
   - component: {fileID: 4322278713992381605}
+  - component: {fileID: 1657956882202134823}
   m_Layer: 0
   m_Name: pelituoli
   m_TagString: Untagged
@@ -166,6 +182,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1657956882202134823
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2345913820710016514}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1698794204801922828, guid: ffced5848d8b45248883c36e9191f485, type: 3}
 --- !u!1 &3217341985619669691
 GameObject:
   m_ObjectHideFlags: 0
@@ -211,6 +241,7 @@ GameObject:
   - component: {fileID: 2536811679665895576}
   - component: {fileID: 7306224378701632045}
   - component: {fileID: 1897049856860411739}
+  - component: {fileID: 4257856125697361944}
   m_Layer: 0
   m_Name: pelituoli.001
   m_TagString: Untagged
@@ -283,3 +314,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4257856125697361944
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5483409946036435115}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6450790799176970154, guid: ffced5848d8b45248883c36e9191f485, type: 3}
