@@ -11,7 +11,7 @@ public class NetworkGrabbableObject : NetworkBehaviour
 
     private void Update()
     {
-        if (IsOwner)
+        if (IsOwner && !IsHost)
         {
             RequestVelocityUpdateServerRpc(rb.velocity);
         }
