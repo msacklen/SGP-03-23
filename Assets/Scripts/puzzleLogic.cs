@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+using Unity.Netcode;
 
-public class puzzleLogic : MonoBehaviour
+public class puzzleLogic : NetworkBehaviour
 {
     [SerializeField] private Vector3 lockedPlace;
     [SerializeField] private Vector3 lockedRotation = new Vector3(-90, 0, 0);
@@ -25,7 +26,7 @@ public class puzzleLogic : MonoBehaviour
 
 
             //Debug.Log(total);
-            puzzle.GetComponent<universalpuzzle>().total += 1;
+            if (IsHost) puzzle.GetComponent<universalpuzzle>().total += 1;
 
             Debug.Log(puzzle.GetComponent<universalpuzzle>().total);
         }
