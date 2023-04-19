@@ -2162,6 +2162,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 442138278040369328, guid: 1d04879bee9542b4abcf32c16c1300c4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 2108727712882913353, guid: 1d04879bee9542b4abcf32c16c1300c4,
         type: 3}
       propertyPath: m_Mesh
@@ -2171,6 +2176,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Convex
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2765709750897468570, guid: 1d04879bee9542b4abcf32c16c1300c4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5969724575134096932, guid: 1d04879bee9542b4abcf32c16c1300c4,
         type: 3}
@@ -2191,6 +2201,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279062568172765412, guid: 1d04879bee9542b4abcf32c16c1300c4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 6454617537731216542, guid: 1d04879bee9542b4abcf32c16c1300c4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8253444441149731234, guid: 1d04879bee9542b4abcf32c16c1300c4,
         type: 3}

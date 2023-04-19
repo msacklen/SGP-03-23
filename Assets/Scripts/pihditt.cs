@@ -14,14 +14,9 @@ public class pihditt : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.name == "Pihdit")
+        if (Vector3.Distance(transform.position, paikkaavaimelle.position) < 1f)
         {
-            transform.parent = paikkaavaimelle;
+            transform.position = paikkaavaimelle.position;
         }
     }
 }
