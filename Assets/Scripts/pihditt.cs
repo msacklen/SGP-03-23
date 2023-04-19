@@ -14,7 +14,7 @@ public class pihditt : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(transform.position, paikkaavaimelle.position) < 1f)
+        if (Vector3.Distance(transform.position, paikkaavaimelle.position) < 0.2f)
         {
             transform.position = paikkaavaimelle.position;
         }
