@@ -17,13 +17,11 @@ public class avain : MonoBehaviour
         if (collision.gameObject.name == "Key")
         {
             Destroy(lid);
-            puzzle.SetActive(true);
-            NetworkObject puzzleNO = GetComponent<NetworkObject>();
-            puzzleNO.Spawn();
-            NetworkObject[] puzzlepieces = GetComponentsInChildren<NetworkObject>();
-            foreach (NetworkObject piece in puzzlepieces)
+            puzzle.transform.position = new Vector3(0, 0, 0);
+            Rigidbody[] pieces = GetComponentsInChildren<Rigidbody>();
+            foreach (Rigidbody piece in pieces)
             {
-                if (piece.tag == "Piece") piece.Spawn();
+                piece.useGravity = true;
             }
         }
     }
