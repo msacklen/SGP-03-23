@@ -8,6 +8,10 @@ using UnityEngine.InputSystem.XR;
 public class NetworkPlayer : NetworkBehaviour
 {
     GameObject[] floors;
+    [SerializeField] Mesh[] bodyMeshes;
+    [SerializeField] Mesh[] headMeshes;
+    [SerializeField] MeshFilter bodyMeshFilter;
+    [SerializeField] MeshFilter headMeshFilter;
 
     public override void OnNetworkSpawn()
     {
@@ -20,6 +24,12 @@ public class NetworkPlayer : NetworkBehaviour
                 floor.GetComponent<TeleportationArea>().teleportationProvider = GetComponent<TeleportationProvider>();
             }
         }
+
+        //if (IsHost)
+        //{
+        //    bodyMeshFilter.mesh = bodyMeshes[1];
+        //    headMeshFilter.mesh = headMeshes[0];
+        //}
 
         NetworkManager.SceneManager.OnSceneEvent += SceneEvent;
     }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Unity.Netcode;
+using UnityEngine.SceneManagement;
 
 public class universalpuzzle : NetworkBehaviour
 {
@@ -15,11 +16,12 @@ public class universalpuzzle : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (total == 12 && IsHost) StartCoroutine("sceneLoader");
     }
 
-    void K‰‰nnynytsaatana()
+    IEnumerator sceneLoader()
     {
-        if (total == 12 && IsHost) Debug.Log("vaihda scene");
+        yield return new WaitForSeconds(5);
+        NetworkManager.SceneManager.LoadScene("EndScreen", LoadSceneMode.Single);
     }
 }
