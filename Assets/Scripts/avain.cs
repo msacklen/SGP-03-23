@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.Netcode;
 
 public class avain : MonoBehaviour
 {
@@ -17,6 +18,11 @@ public class avain : MonoBehaviour
         {
             Destroy(lid);
             puzzle.SetActive(true);
+            NetworkObject[] puzzlepieces = GetComponentsInChildren<NetworkObject>();
+            foreach (NetworkObject piece in puzzlepieces)
+            {
+                piece.Spawn();
+            }
         }
     }
 }
