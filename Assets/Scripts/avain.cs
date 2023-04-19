@@ -21,7 +21,7 @@ public class avain : MonoBehaviour
             Rigidbody[] pieces = GetComponentsInChildren<Rigidbody>();
             foreach (Rigidbody piece in pieces)
             {
-                piece.useGravity = true;
+                piece.isKinematic = false;
             }
         }
     }
