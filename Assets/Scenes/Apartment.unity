@@ -8129,7 +8129,7 @@ GameObject:
   - component: {fileID: 8218912656862996134}
   m_Layer: 0
   m_Name: pala.020
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8345,7 +8345,7 @@ GameObject:
   - component: {fileID: 7393831669200104305}
   m_Layer: 0
   m_Name: pala.021
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8371,7 +8371,7 @@ GameObject:
   - component: {fileID: 4027641521104599529}
   m_Layer: 0
   m_Name: pala.022
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8654,7 +8654,7 @@ GameObject:
   - component: {fileID: 5594135027560360068}
   m_Layer: 0
   m_Name: pala.018
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9111,7 +9111,7 @@ GameObject:
   - component: {fileID: 7966629659256021727}
   m_Layer: 0
   m_Name: pala.015
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9137,7 +9137,7 @@ GameObject:
   - component: {fileID: 6922147839404943611}
   m_Layer: 0
   m_Name: pala.012
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9460,7 +9460,7 @@ GameObject:
   - component: {fileID: 7858706463828278920}
   m_Layer: 0
   m_Name: pala.016
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9771,7 +9771,7 @@ GameObject:
   - component: {fileID: 6536071417768888698}
   m_Layer: 0
   m_Name: pala.014
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9797,7 +9797,7 @@ GameObject:
   - component: {fileID: 5769535349956837274}
   m_Layer: 0
   m_Name: pala.023
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9823,7 +9823,7 @@ GameObject:
   - component: {fileID: 5313865461714030410}
   m_Layer: 0
   m_Name: pala.019
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10115,7 +10115,7 @@ GameObject:
   - component: {fileID: 8997315450756106757}
   m_Layer: 0
   m_Name: pala.017
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10788,7 +10788,7 @@ GameObject:
   - component: {fileID: 7748398983758423883}
   m_Layer: 0
   m_Name: pala.013
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
