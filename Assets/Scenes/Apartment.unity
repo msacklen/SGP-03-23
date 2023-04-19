@@ -2306,10 +2306,34 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 962450483}
+        m_TargetAssemblyTypeName: pihditt, Assembly-CSharp
+        m_MethodName: activated
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 962450483}
+        m_TargetAssemblyTypeName: pihditt, Assembly-CSharp
+        m_MethodName: deactivate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_Activated:
     m_PersistentCalls:
       m_Calls: []
@@ -3322,6 +3346,12 @@ MonoBehaviour:
   m_Teleporting:
     m_PersistentCalls:
       m_Calls: []
+--- !u!4 &844517419 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8253444441149731234, guid: 1d04879bee9542b4abcf32c16c1300c4,
+    type: 3}
+  m_PrefabInstance: {fileID: 657250099}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &853852179
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4122,6 +4152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad86a32549690214fb7014c04367ec26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pihdit: {fileID: 844517419}
   paikkaavaimelle: {fileID: 893808759}
 --- !u!1001 &967970603
 PrefabInstance:
