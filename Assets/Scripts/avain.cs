@@ -18,10 +18,12 @@ public class avain : MonoBehaviour
         {
             Destroy(lid);
             puzzle.SetActive(true);
+            NetworkObject puzzleNO = GetComponent<NetworkObject>();
+            puzzleNO.Spawn();
             NetworkObject[] puzzlepieces = GetComponentsInChildren<NetworkObject>();
             foreach (NetworkObject piece in puzzlepieces)
             {
-                piece.Spawn();
+                if (piece.tag == "Piece") piece.Spawn();
             }
         }
     }
