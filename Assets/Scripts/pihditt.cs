@@ -21,7 +21,7 @@ public class pihditt : MonoBehaviour
     {
         if (collision.gameObject.name == "Pihdit")
         {
-            transform.position = paikkaavaimelle.position;
+            transform.parent = paikkaavaimelle;
         }
     }
 }
