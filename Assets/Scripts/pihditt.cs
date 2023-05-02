@@ -9,6 +9,7 @@ public class pihditt : MonoBehaviour
     public Transform paikkaavaimelle;
     private bool isActivated = false;
     private bool emt = false;
+    public Transform kansi;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +19,7 @@ public class pihditt : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(transform.position, paikkaavaimelle.position) < 0.2f && isActivated == true)
+        if (Vector3.Distance(transform.position, paikkaavaimelle.position) < 0.1f && isActivated == true)
         {
             emt = true;
             transform.parent = pihdit;
