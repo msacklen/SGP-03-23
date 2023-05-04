@@ -10,11 +10,10 @@ public class pihditt : MonoBehaviour
     private bool isActivated = false;
     private bool emt = false;
     public Transform kansi;
-    private Rigidbody rb;
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        
     }
 
     // Update is called once per frame
@@ -25,11 +24,6 @@ public class pihditt : MonoBehaviour
             emt = true;
             transform.parent = pihdit;
             transform.position = paikkaavaimelle.position;
-            rb.isKinematic = true;
-        }
-        else
-        {
-            rb.isKinematic = false;
         }
 
         if (emt != false)
