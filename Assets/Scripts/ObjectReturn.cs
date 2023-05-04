@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.Netcode;
 
-public class ObjectReturn : MonoBehaviour
+public class ObjectReturn : NetworkBehaviour
 {
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        InteractableObject otherObject = other.gameObject.GetComponent<InteractableObject>();
+        InteractableObject otherObject = other.gameObject.GetComponentInParent<InteractableObject>();
         otherObject.ReturnObject(transform.position);
     }
 }
