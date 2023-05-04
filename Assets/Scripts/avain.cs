@@ -20,7 +20,7 @@ public class avain : MonoBehaviour
             NetworkObject _lappuNO = _lappu.GetComponent<NetworkObject>();
             _lappuNO.Spawn();
 
-            Destroy(lid);
+            NetworkManager.Destroy(lid);
             puzzle.transform.position = new Vector3(0, 0, 0);
             Rigidbody[] pieces = GetComponentsInChildren<Rigidbody>();
             foreach (Rigidbody piece in pieces)
