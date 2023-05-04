@@ -57,8 +57,10 @@ public class NetworkPlayer : NetworkBehaviour
             ActionBasedSnapTurnProvider clientTurnProvider = GetComponent<ActionBasedSnapTurnProvider>();
             TrackedPoseDriver clientHead = GetComponentInChildren<TrackedPoseDriver>();
             Camera clientCamera = GetComponentInChildren<Camera>();
+            AudioListener clientListeners = GetComponentInChildren<AudioListener>();
 
-            clientCamera.gameObject.SetActive(false);
+            clientCamera.enabled = false;
+            clientListeners.enabled = false;
             clientTeleportProvider.enableTeleportation = false;
             clientTurnProvider.enableTurnLeftRight = false;
             clientTurnProvider.enableTurnAround = false;
