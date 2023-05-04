@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Unity.Netcode;
 
-public class ObjectReturn : NetworkBehaviour
+public class ObjectReturn : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
