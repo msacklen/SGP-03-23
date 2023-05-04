@@ -8,6 +8,6 @@ public class ObjectReturn : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         InteractableObject otherObject = other.gameObject.GetComponentInParent<InteractableObject>();
-        otherObject.ReturnObject(transform.position);
+        if(otherObject != null) otherObject.ReturnObject(transform.position);
     }
 }
