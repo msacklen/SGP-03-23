@@ -11,6 +11,7 @@ public class pihditt : NetworkBehaviour
     private bool isActivated = false;
     public Transform kansi;
     private Rigidbody rb;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,17 +29,17 @@ public class pihditt : NetworkBehaviour
             rb.isKinematic = true;
             if (!IsOwner)
             {
-                NetworkObject _pihditNO = pihdit.GetComponent<NetworkObject>();
-                RequestGrabbableOwnershipServerRpc(_pihditNO.OwnerClientId, GetComponent<NetworkObject>());
+                NetworkPlayer _localPlayer = NetworkManager.Singleton.ConnectedClients[NetworkManager.Singleton.LocalClientId].PlayerObject.gameObject.GetComponent<NetworkPlayer>();
+                _localPlayer.RequestGrabbableOwnershipServerRpc(NetworkManager.Singleton.LocalClientId, GetComponent<NetworkObject>());
             }
+        }
+        else if(Vector3.Distance(transform.position, paikkaavaimelle.position) < 0.1f)
+        {
+            GetComponent<XRGrabInteractable>().enabled = true;
         }
         else
         {
             rb.isKinematic = false;
-            if (IsOwner)
-            {
-                RequestGrabbableOwnershipRemoveServerRpc(GetComponent<NetworkObject>());
-            }
         }
     }
 
@@ -50,31 +51,5 @@ public class pihditt : NetworkBehaviour
     public void deactivate()
     {
         isActivated = false;
-    }
-
-    [ServerRpc]
-    void RequestGrabbableOwnershipServerRpc(ulong newOwnerId, NetworkObjectReference networkObjectReference)
-    {
-        if (networkObjectReference.TryGet(out NetworkObject networkObject))
-        {
-            networkObject.ChangeOwnership(newOwnerId);
-        }
-        else
-        {
-            Debug.LogError("Unable to change grabbable ownership");
-        }
-    }
-
-    [ServerRpc]
-    void RequestGrabbableOwnershipRemoveServerRpc(NetworkObjectReference networkObjectReference)
-    {
-        if (networkObjectReference.TryGet(out NetworkObject networkObject))
-        {
-            networkObject.RemoveOwnership();
-        }
-        else
-        {
-            Debug.LogError("Unable to change grabbable ownership");
-        }
     }
 }

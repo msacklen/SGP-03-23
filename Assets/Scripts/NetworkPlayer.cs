@@ -99,7 +99,7 @@ public class NetworkPlayer : NetworkBehaviour
     }
 
     [ServerRpc]
-    void RequestGrabbableOwnershipServerRpc(ulong newOwnerId, NetworkObjectReference networkObjectReference)
+    public void RequestGrabbableOwnershipServerRpc(ulong newOwnerId, NetworkObjectReference networkObjectReference)
     {
         if (networkObjectReference.TryGet(out NetworkObject networkObject))
         {

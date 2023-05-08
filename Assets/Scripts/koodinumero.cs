@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.Netcode;
+using UnityEngine.SceneManagement;
 
-public class koodinumero : MonoBehaviour
+public class koodinumero : NetworkBehaviour
 {
     public string koodi;
     private void Update()
@@ -20,6 +22,7 @@ public class koodinumero : MonoBehaviour
             else
             {
                 Debug.Log("open");
+                if (IsHost) NetworkManager.SceneManager.LoadScene("EndScreen", LoadSceneMode.Single);
             }
         }
     }
