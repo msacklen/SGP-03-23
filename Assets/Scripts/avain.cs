@@ -16,7 +16,7 @@ public class avain : MonoBehaviour
     {
         if (collision.gameObject.name == "Key")
         {
-            GameObject _lappu = Instantiate(highlight, new Vector3(1.85f, 1.012f, -1.092f), Quaternion.identity);
+            GameObject _lappu = Instantiate(highlight, highlight.transform.position, Quaternion.identity);
             NetworkObject _lappuNO = _lappu.GetComponent<NetworkObject>();
             _lappuNO.Spawn();
 

@@ -7192,7 +7192,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1033200810}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25.73, y: 0, z: 0}
+  m_LocalPosition: {x: -26.23, y: 0, z: 3.673}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11805,13 +11805,14 @@ GameObject:
   - component: {fileID: 1899098120}
   - component: {fileID: 1899098119}
   - component: {fileID: 1899098118}
+  - component: {fileID: 1899098121}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Timer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1899098117
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11894,6 +11895,19 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1899098121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899098116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 161140181fcb2b04894186aa08b8c651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerText: {fileID: 724006510}
 --- !u!1001 &1900932929
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14956,7 +14970,6 @@ GameObject:
   - component: {fileID: 8218912656862996133}
   - component: {fileID: 8218912656862996135}
   - component: {fileID: 8218912656862996134}
-  - component: {fileID: 8218912656862996136}
   - component: {fileID: 8218912656862996137}
   m_Layer: 0
   m_Name: pala.020
@@ -14972,9 +14985,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 244958320040988334}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.67111874, y: 1.258, z: -0.895}
-  m_LocalScale: {x: 30, y: 45, z: 0.9}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 1.1637992, y: 1.0278, z: -1.022}
+  m_LocalScale: {x: 30.000004, y: 45, z: 0.9}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1033200811}
@@ -14995,9 +15008,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6316644005418269217}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.623, y: 1.258, z: -1.014}
-  m_LocalScale: {x: 30, y: 45, z: 0.9}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 1.2157992, y: 1.1609, z: -1.07}
+  m_LocalScale: {x: 30.000004, y: 45, z: 0.9}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1033200811}
@@ -15215,7 +15228,6 @@ GameObject:
   - component: {fileID: 7393831669200104304}
   - component: {fileID: 7393831669200104306}
   - component: {fileID: 7393831669200104305}
-  - component: {fileID: 7393831669200104307}
   - component: {fileID: 7393831669200104308}
   m_Layer: 0
   m_Name: pala.021
@@ -15243,7 +15255,6 @@ GameObject:
   - component: {fileID: 4027641521104599528}
   - component: {fileID: 4027641521104599530}
   - component: {fileID: 4027641521104599529}
-  - component: {fileID: 4027641521104599531}
   - component: {fileID: 4027641521104599532}
   m_Layer: 0
   m_Name: pala.022
@@ -15351,9 +15362,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4176907989660161065}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.6506642, y: 1.258, z: -0.802}
-  m_LocalScale: {x: 30, y: 45, z: 0.9}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 1.1987993, y: 1.2006999, z: -0.988}
+  m_LocalScale: {x: 30.000004, y: 45, z: 0.9}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1033200811}
@@ -15618,7 +15629,6 @@ GameObject:
   - component: {fileID: 5594135027560360067}
   - component: {fileID: 5594135027560360069}
   - component: {fileID: 5594135027560360068}
-  - component: {fileID: 5594135027560360070}
   - component: {fileID: 5594135027560360071}
   m_Layer: 0
   m_Name: pala.018
@@ -16387,7 +16397,6 @@ GameObject:
   - component: {fileID: 7966629659256021726}
   - component: {fileID: 7966629659256021728}
   - component: {fileID: 7966629659256021727}
-  - component: {fileID: 7966629659256021729}
   - component: {fileID: 7966629659256021730}
   m_Layer: 0
   m_Name: pala.015
@@ -16437,7 +16446,6 @@ GameObject:
   - component: {fileID: 6922147839404943610}
   - component: {fileID: 6922147839404943612}
   - component: {fileID: 6922147839404943611}
-  - component: {fileID: 6922147839404943613}
   - component: {fileID: 6922147839404943614}
   m_Layer: 0
   m_Name: pala.012
@@ -16484,9 +16492,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 993709605964120309}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.6233914, y: 1.258, z: -1.088}
-  m_LocalScale: {x: 30, y: 45, z: 0.9}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 1.1693993, y: 1.2163, z: -1.122}
+  m_LocalScale: {x: 30.000004, y: 45, z: 0.9}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1033200811}
@@ -16504,7 +16512,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 605353b2ea802374d833f48b62d2b7b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lockedPlace: {x: 1.773391, y: 1, z: -1.528229}
+  lockedPlace: {x: 1.8526, y: 1, z: -1.4368}
   lockedRotation: {x: -90, y: 0, z: 0}
   puzzle: {fileID: 1033200810}
 --- !u!114 &4027641521104599524
@@ -16758,32 +16766,6 @@ MonoBehaviour:
   ScaleThreshold: 0.01
   InLocalSpace: 0
   Interpolate: 1
---- !u!114 &4027641521104599531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 993709605964120309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SyncPositionX: 1
-  SyncPositionY: 1
-  SyncPositionZ: 1
-  SyncRotAngleX: 1
-  SyncRotAngleY: 1
-  SyncRotAngleZ: 1
-  SyncScaleX: 1
-  SyncScaleY: 1
-  SyncScaleZ: 1
-  PositionThreshold: 0.001
-  RotAngleThreshold: 0.01
-  ScaleThreshold: 0.01
-  InLocalSpace: 0
-  Interpolate: 1
 --- !u!114 &4027641521104599532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16823,7 +16805,6 @@ GameObject:
   - component: {fileID: 7858706463828278919}
   - component: {fileID: 7858706463828278921}
   - component: {fileID: 7858706463828278920}
-  - component: {fileID: 7858706463828278922}
   - component: {fileID: 7858706463828278923}
   m_Layer: 0
   m_Name: pala.016
@@ -17001,9 +16982,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3652484079935026865}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.6, y: 1.258, z: -0.943}
-  m_LocalScale: {x: 30, y: 45, z: 0.9}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 1.1838, y: 1.3337, z: -1.07}
+  m_LocalScale: {x: 30.000004, y: 45, z: 0.9}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1033200811}
@@ -17059,9 +17040,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5313865461714030403}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.514, y: 1.258, z: -0.754}
-  m_LocalScale: {x: 30, y: 45, z: 0.9}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 1.1957991, y: 1.1198, z: -1.0813}
+  m_LocalScale: {x: 30.000004, y: 45, z: 0.9}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1033200811}
@@ -17092,9 +17073,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5075979197130503184}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.451, y: 1.258, z: -1.021}
-  m_LocalScale: {x: 30, y: 45, z: 0.9}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 1.2057992, y: 1.0474, z: -1.089}
+  m_LocalScale: {x: 30.000004, y: 45, z: 0.9}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1033200811}
@@ -17107,9 +17088,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3611673633579561228}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.576, y: 1.258, z: -1.209}
-  m_LocalScale: {x: 30, y: 45, z: 0.9}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 1.1857991, y: 1.2365, z: -1.04}
+  m_LocalScale: {x: 30.000004, y: 45, z: 0.9}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1033200811}
@@ -17122,9 +17103,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2018506275014699342}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.431, y: 1.258, z: -1.131}
-  m_LocalScale: {x: 30, y: 45, z: 0.9}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 1.2207992, y: 1.1411, z: -1.0660001}
+  m_LocalScale: {x: 30.000004, y: 45, z: 0.9}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1033200811}
@@ -17295,7 +17276,6 @@ GameObject:
   - component: {fileID: 6536071417768888697}
   - component: {fileID: 6536071417768888699}
   - component: {fileID: 6536071417768888698}
-  - component: {fileID: 6536071417768888700}
   - component: {fileID: 6536071417768888701}
   m_Layer: 0
   m_Name: pala.014
@@ -17387,7 +17367,6 @@ GameObject:
   - component: {fileID: 5769535349956837273}
   - component: {fileID: 5769535349956837275}
   - component: {fileID: 5769535349956837274}
-  - component: {fileID: 5769535349956837276}
   - component: {fileID: 5769535349956837277}
   m_Layer: 0
   m_Name: pala.023
@@ -17448,7 +17427,6 @@ GameObject:
   - component: {fileID: 5313865461714030409}
   - component: {fileID: 5313865461714030411}
   - component: {fileID: 5313865461714030410}
-  - component: {fileID: 5313865461714030412}
   - component: {fileID: 5313865461714030413}
   m_Layer: 0
   m_Name: pala.019
@@ -17469,7 +17447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 605353b2ea802374d833f48b62d2b7b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lockedPlace: {x: 2.048429, y: 1, z: -1.228049}
+  lockedPlace: {x: 2.071303, y: 1, z: -1.1673}
   lockedRotation: {x: -90, y: 0, z: 0}
   puzzle: {fileID: 1033200810}
 --- !u!114 &5313865461714030405
@@ -17723,32 +17701,6 @@ MonoBehaviour:
   ScaleThreshold: 0.01
   InLocalSpace: 0
   Interpolate: 1
---- !u!114 &5313865461714030412
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5313865461714030403}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SyncPositionX: 1
-  SyncPositionY: 1
-  SyncPositionZ: 1
-  SyncRotAngleX: 1
-  SyncRotAngleY: 1
-  SyncRotAngleZ: 1
-  SyncScaleX: 1
-  SyncScaleY: 1
-  SyncScaleZ: 1
-  PositionThreshold: 0.001
-  RotAngleThreshold: 0.01
-  ScaleThreshold: 0.01
-  InLocalSpace: 0
-  Interpolate: 1
 --- !u!114 &5313865461714030413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17780,7 +17732,6 @@ GameObject:
   - component: {fileID: 8997315450756106756}
   - component: {fileID: 8997315450756106758}
   - component: {fileID: 8997315450756106757}
-  - component: {fileID: 8997315450756106759}
   - component: {fileID: 8997315450756106760}
   m_Layer: 0
   m_Name: pala.017
@@ -17886,7 +17837,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 605353b2ea802374d833f48b62d2b7b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lockedPlace: {x: 2.045215, y: 1, z: -0.9501649}
+  lockedPlace: {x: 2.0694, y: 1, z: -0.9308}
   lockedRotation: {x: -90, y: 0, z: 0}
   puzzle: {fileID: 1033200810}
 --- !u!114 &5594135027560360063
@@ -18140,32 +18091,6 @@ MonoBehaviour:
   ScaleThreshold: 0.01
   InLocalSpace: 0
   Interpolate: 1
---- !u!114 &5594135027560360070
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2018506275014699342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SyncPositionX: 1
-  SyncPositionY: 1
-  SyncPositionZ: 1
-  SyncRotAngleX: 1
-  SyncRotAngleY: 1
-  SyncRotAngleZ: 1
-  SyncScaleX: 1
-  SyncScaleY: 1
-  SyncScaleZ: 1
-  PositionThreshold: 0.001
-  RotAngleThreshold: 0.01
-  ScaleThreshold: 0.01
-  InLocalSpace: 0
-  Interpolate: 1
 --- !u!114 &5594135027560360071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18198,7 +18123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 605353b2ea802374d833f48b62d2b7b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lockedPlace: {x: 2.028656, y: 1, z: -1.500694}
+  lockedPlace: {x: 2.051, y: 1, z: -1.4078}
   lockedRotation: {x: -90, y: 0, z: 0}
   puzzle: {fileID: 1033200810}
 --- !u!114 &5769535349956837269
@@ -18436,32 +18361,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: df2868252ab5c4d1da357e8f11f1b524, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SyncPositionX: 1
-  SyncPositionY: 1
-  SyncPositionZ: 1
-  SyncRotAngleX: 1
-  SyncRotAngleY: 1
-  SyncRotAngleZ: 1
-  SyncScaleX: 1
-  SyncScaleY: 1
-  SyncScaleZ: 1
-  PositionThreshold: 0.001
-  RotAngleThreshold: 0.01
-  ScaleThreshold: 0.01
-  InLocalSpace: 0
-  Interpolate: 1
---- !u!114 &5769535349956837276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5075979197130503184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SyncPositionX: 1
@@ -18755,9 +18654,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4975517471559599794}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.217, y: 1.258, z: -0.69085723}
-  m_LocalScale: {x: 30, y: 45, z: 0.9}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 1.2027992, y: 1.2663, z: -1.132}
+  m_LocalScale: {x: 30.000004, y: 45, z: 0.9}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1033200811}
@@ -18824,7 +18723,6 @@ GameObject:
   - component: {fileID: 7748398983758423882}
   - component: {fileID: 7748398983758423884}
   - component: {fileID: 7748398983758423883}
-  - component: {fileID: 7748398983758423885}
   - component: {fileID: 7748398983758423886}
   m_Layer: 0
   m_Name: pala.013
@@ -18923,9 +18821,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 964638857427032422}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.4212142, y: 1.258, z: -1.2680526}
-  m_LocalScale: {x: 30, y: 45, z: 0.9}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 1.1747992, y: 1.059, z: -1.008}
+  m_LocalScale: {x: 30.000004, y: 45, z: 0.9}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1033200811}
@@ -18985,7 +18883,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 605353b2ea802374d833f48b62d2b7b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lockedPlace: {x: 1.773391, y: 1, z: -0.6908572}
+  lockedPlace: {x: 1.856, y: 1, z: -0.7379001}
   lockedRotation: {x: -90, y: 0, z: 0}
   puzzle: {fileID: 1033200810}
 --- !u!114 &6536071417768888693
@@ -19239,32 +19137,6 @@ MonoBehaviour:
   ScaleThreshold: 0.01
   InLocalSpace: 0
   Interpolate: 1
---- !u!114 &6536071417768888700
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4975517471559599794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SyncPositionX: 1
-  SyncPositionY: 1
-  SyncPositionZ: 1
-  SyncRotAngleX: 1
-  SyncRotAngleY: 1
-  SyncRotAngleZ: 1
-  SyncScaleX: 1
-  SyncScaleY: 1
-  SyncScaleZ: 1
-  PositionThreshold: 0.001
-  RotAngleThreshold: 0.01
-  ScaleThreshold: 0.01
-  InLocalSpace: 0
-  Interpolate: 1
 --- !u!114 &6536071417768888701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19297,7 +19169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 605353b2ea802374d833f48b62d2b7b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lockedPlace: {x: 1.523, y: 1, z: -0.723}
+  lockedPlace: {x: 1.654, y: 1, z: -0.769}
   lockedRotation: {x: -90, y: 0, z: 0}
   puzzle: {fileID: 1033200810}
 --- !u!114 &6922147839404943606
@@ -19535,32 +19407,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: df2868252ab5c4d1da357e8f11f1b524, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SyncPositionX: 1
-  SyncPositionY: 1
-  SyncPositionZ: 1
-  SyncRotAngleX: 1
-  SyncRotAngleY: 1
-  SyncRotAngleZ: 1
-  SyncScaleX: 1
-  SyncScaleY: 1
-  SyncScaleZ: 1
-  PositionThreshold: 0.001
-  RotAngleThreshold: 0.01
-  ScaleThreshold: 0.01
-  InLocalSpace: 0
-  Interpolate: 1
---- !u!114 &6922147839404943613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3652484079935026865}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SyncPositionX: 1
@@ -19837,7 +19683,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 605353b2ea802374d833f48b62d2b7b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lockedPlace: {x: 1.571214, y: 1, z: -1.268053}
+  lockedPlace: {x: 1.7031, y: 1, z: -1.2108}
   lockedRotation: {x: -90, y: 0, z: 0}
   puzzle: {fileID: 1033200810}
 --- !u!114 &7393831669200104300
@@ -20075,32 +19921,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: df2868252ab5c4d1da357e8f11f1b524, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SyncPositionX: 1
-  SyncPositionY: 1
-  SyncPositionZ: 1
-  SyncRotAngleX: 1
-  SyncRotAngleY: 1
-  SyncRotAngleZ: 1
-  SyncScaleX: 1
-  SyncScaleY: 1
-  SyncScaleZ: 1
-  PositionThreshold: 0.001
-  RotAngleThreshold: 0.01
-  ScaleThreshold: 0.01
-  InLocalSpace: 0
-  Interpolate: 1
---- !u!114 &7393831669200104307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 964638857427032422}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SyncPositionX: 1
@@ -20467,7 +20287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 605353b2ea802374d833f48b62d2b7b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lockedPlace: {x: 2.028656, y: 1, z: -0.68063}
+  lockedPlace: {x: 2.0525, y: 1, z: -0.7257}
   lockedRotation: {x: -90, y: 0, z: 0}
   puzzle: {fileID: 1033200810}
 --- !u!114 &7748398983758423878
@@ -20705,32 +20525,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: df2868252ab5c4d1da357e8f11f1b524, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SyncPositionX: 1
-  SyncPositionY: 1
-  SyncPositionZ: 1
-  SyncRotAngleX: 1
-  SyncRotAngleY: 1
-  SyncRotAngleZ: 1
-  SyncScaleX: 1
-  SyncScaleY: 1
-  SyncScaleZ: 1
-  PositionThreshold: 0.001
-  RotAngleThreshold: 0.01
-  ScaleThreshold: 0.01
-  InLocalSpace: 0
-  Interpolate: 1
---- !u!114 &7748398983758423885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6316644005418269217}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SyncPositionX: 1
@@ -21001,7 +20795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 605353b2ea802374d833f48b62d2b7b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lockedPlace: {x: 1.800664, y: 1, z: -0.9925349}
+  lockedPlace: {x: 1.882, y: 1, z: -0.9748001}
   lockedRotation: {x: -90, y: 0, z: 0}
   puzzle: {fileID: 1033200810}
 --- !u!114 &7858706463828278915
@@ -21255,32 +21049,6 @@ MonoBehaviour:
   ScaleThreshold: 0.01
   InLocalSpace: 0
   Interpolate: 1
---- !u!114 &7858706463828278922
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4176907989660161065}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SyncPositionX: 1
-  SyncPositionY: 1
-  SyncPositionZ: 1
-  SyncRotAngleX: 1
-  SyncRotAngleY: 1
-  SyncRotAngleZ: 1
-  SyncScaleX: 1
-  SyncScaleY: 1
-  SyncScaleZ: 1
-  PositionThreshold: 0.001
-  RotAngleThreshold: 0.01
-  ScaleThreshold: 0.01
-  InLocalSpace: 0
-  Interpolate: 1
 --- !u!114 &7858706463828278923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21362,7 +21130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 605353b2ea802374d833f48b62d2b7b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lockedPlace: {x: 1.523487, y: 1, z: -1.500694}
+  lockedPlace: {x: 1.658, y: 1, z: -1.4108}
   lockedRotation: {x: -90, y: 0, z: 0}
   puzzle: {fileID: 1033200810}
 --- !u!114 &7966629659256021722
@@ -21616,32 +21384,6 @@ MonoBehaviour:
   ScaleThreshold: 0.01
   InLocalSpace: 0
   Interpolate: 1
---- !u!114 &7966629659256021729
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3611673633579561228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SyncPositionX: 1
-  SyncPositionY: 1
-  SyncPositionZ: 1
-  SyncRotAngleX: 1
-  SyncRotAngleY: 1
-  SyncRotAngleZ: 1
-  SyncScaleX: 1
-  SyncScaleY: 1
-  SyncScaleZ: 1
-  PositionThreshold: 0.001
-  RotAngleThreshold: 0.01
-  ScaleThreshold: 0.01
-  InLocalSpace: 0
-  Interpolate: 1
 --- !u!114 &7966629659256021730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21719,7 +21461,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 605353b2ea802374d833f48b62d2b7b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lockedPlace: {x: 1.821119, y: 1, z: -1.240469}
+  lockedPlace: {x: 1.9, y: 1, z: -1.1838}
   lockedRotation: {x: -90, y: 0, z: 0}
   puzzle: {fileID: 1033200810}
 --- !u!114 &8218912656862996129
@@ -21957,32 +21699,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: df2868252ab5c4d1da357e8f11f1b524, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SyncPositionX: 1
-  SyncPositionY: 1
-  SyncPositionZ: 1
-  SyncRotAngleX: 1
-  SyncRotAngleY: 1
-  SyncRotAngleZ: 1
-  SyncScaleX: 1
-  SyncScaleY: 1
-  SyncScaleZ: 1
-  PositionThreshold: 0.001
-  RotAngleThreshold: 0.01
-  ScaleThreshold: 0.01
-  InLocalSpace: 0
-  Interpolate: 1
---- !u!114 &8218912656862996136
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 244958320040988334}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SyncPositionX: 1
@@ -23192,9 +22908,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5462162994673662399}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.38371417, y: 1.258, z: -1.0389445}
-  m_LocalScale: {x: 30, y: 45, z: 0.9}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 1.2007991, y: 1.0841, z: -1.089}
+  m_LocalScale: {x: 30.000004, y: 45, z: 0.9}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1033200811}
@@ -23212,7 +22928,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 605353b2ea802374d833f48b62d2b7b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lockedPlace: {x: 1.533714, y: 1, z: -1.038944}
+  lockedPlace: {x: 1.664, y: 1, z: -1.0208}
   lockedRotation: {x: -90, y: 0, z: 0}
   puzzle: {fileID: 1033200810}
 --- !u!114 &8997315450756106752
@@ -23450,32 +23166,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: df2868252ab5c4d1da357e8f11f1b524, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SyncPositionX: 1
-  SyncPositionY: 1
-  SyncPositionZ: 1
-  SyncRotAngleX: 1
-  SyncRotAngleY: 1
-  SyncRotAngleZ: 1
-  SyncScaleX: 1
-  SyncScaleY: 1
-  SyncScaleZ: 1
-  PositionThreshold: 0.001
-  RotAngleThreshold: 0.01
-  ScaleThreshold: 0.01
-  InLocalSpace: 0
-  Interpolate: 1
---- !u!114 &8997315450756106759
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5462162994673662399}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SyncPositionX: 1
