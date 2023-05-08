@@ -17,6 +17,7 @@ public class puzzleLogic : NetworkBehaviour
     {
         if (Vector3.Distance(lockedPlace, transform.position) < 0.33f && IsOwnedByServer && transform.parent != null)
         {
+            Debug.Log("Puzzlepiece in place");
             transform.position = lockedPlace;
             transform.eulerAngles = lockedRotation;
             GetComponent<Rigidbody>().isKinematic = true;
