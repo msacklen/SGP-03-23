@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Unity.Netcode;
 
-public class avain : MonoBehaviour
+public class avain : NetworkBehaviour
 {
     [SerializeField] private GameObject lid;
     [SerializeField] private GameObject puzzle;
@@ -20,7 +20,7 @@ public class avain : MonoBehaviour
             NetworkObject _lappuNO = _lappu.GetComponent<NetworkObject>();
             _lappuNO.Spawn();
 
-            NetworkManager.Destroy(lid);
+            if (IsHost) NetworkManager.Destroy(lid);
             puzzle.transform.position = new Vector3(0, 0, 0);
             Rigidbody[] pieces = GetComponentsInChildren<Rigidbody>();
             foreach (Rigidbody piece in pieces)
