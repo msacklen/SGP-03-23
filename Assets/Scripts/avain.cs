@@ -18,7 +18,7 @@ public class avain : NetworkBehaviour
         {
             GameObject _lappu = Instantiate(highlight, highlight.transform.position, Quaternion.identity);
             NetworkObject _lappuNO = _lappu.GetComponent<NetworkObject>();
-            _lappuNO.Spawn();
+            if (IsHost) _lappuNO.Spawn();
 
             if (IsHost) NetworkManager.Destroy(lid);
             puzzle.transform.position = new Vector3(0, 0, 0);
