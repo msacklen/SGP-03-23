@@ -21,8 +21,9 @@ public class puzzleLogic : NetworkBehaviour
             transform.eulerAngles = lockedRotation;
             GetComponent<Rigidbody>().isKinematic = true;
 
-            this.gameObject.GetComponent<puzzleLogic>().enabled = false;
-            GetComponent<XRGrabInteractable>().enabled = false;
+            
+            //GetComponent<XRGrabInteractable>().enabled = false;
+            GetComponent<puzzleLogic>().enabled = false;
 
 
             //Debug.Log(total);
