@@ -33,13 +33,18 @@ public class pihditt : NetworkBehaviour
                 _localPlayer.RequestGrabbableOwnershipServerRpc(NetworkManager.Singleton.LocalClientId, GetComponent<NetworkObject>());
             }
         }
-        else if(Vector3.Distance(transform.position, paikkaavaimelle.position) < 0.1f)
-        {
-            GetComponent<XRGrabInteractable>().enabled = true;
-        }
         else
         {
             rb.isKinematic = false;
+            if (IsOwner)
+            {
+
+            }
+        }
+
+        if(Vector3.Distance(transform.position, paikkaavaimelle.position) < 0.1f)
+        {
+            GetComponent<XRGrabInteractable>().enabled = true;
         }
     }
 
