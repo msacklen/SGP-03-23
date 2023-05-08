@@ -22,7 +22,7 @@ public class puzzleLogic : NetworkBehaviour
             GetComponent<Rigidbody>().isKinematic = true;
 
             
-            //GetComponent<XRGrabInteractable>().enabled = false;
+            GetComponent<XRGrabInteractable>().enabled = false;
             GetComponent<puzzleLogic>().enabled = false;
 
 
