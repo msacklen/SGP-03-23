@@ -36,9 +36,10 @@ public class pihditt : NetworkBehaviour
         else
         {
             rb.isKinematic = false;
-            if (IsOwner)
+            if (IsOwner && !IsHost)
             {
-
+                NetworkPlayer _localPlayer = NetworkManager.Singleton.ConnectedClients[NetworkManager.Singleton.LocalClientId].PlayerObject.gameObject.GetComponent<NetworkPlayer>();
+                _localPlayer.RequestGrabbableOwnershipRemoveServerRpc(GetComponent<NetworkObject>());
             }
         }
 

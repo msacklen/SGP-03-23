@@ -117,7 +117,7 @@ public class NetworkPlayer : NetworkBehaviour
     }
 
     [ServerRpc]
-    void RequestGrabbableOwnershipRemoveServerRpc(NetworkObjectReference networkObjectReference)
+    public void RequestGrabbableOwnershipRemoveServerRpc(NetworkObjectReference networkObjectReference)
     {
         if (networkObjectReference.TryGet(out NetworkObject networkObject))
         {

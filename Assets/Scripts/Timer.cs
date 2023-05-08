@@ -18,7 +18,7 @@ public class Timer : MonoBehaviour
         float fSeconds = Mathf.Round(time - (fMinutes * 60));
         string sSeconds = fSeconds.ToString();
 
-        if (time % 2 == 0)
+        if (fSeconds % 2 == 0)
         {
             timeText = sMinutes + ":" + sSeconds;
         }
