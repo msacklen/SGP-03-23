@@ -13,12 +13,13 @@ public class Timer : MonoBehaviour
         time -= Time.deltaTime;
         string timeText;
 
-        float fMinutes = time % 60;
-        string sMinutes = fMinutes.ToString();
-        float fSeconds = Mathf.Round(time - (fMinutes * 60));
+        float roundedTime = Mathf.Round(time);
+        float fSeconds = roundedTime % 60;
         string sSeconds = fSeconds.ToString();
+        float fMinutes = (roundedTime - fSeconds) / 60;
+        string sMinutes = fMinutes.ToString();
 
-        if (time % 2 == 0)
+        if (fSeconds % 2 == 0)
         {
             timeText = sMinutes + ":" + sSeconds;
         }
