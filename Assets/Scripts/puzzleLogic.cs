@@ -15,7 +15,7 @@ public class puzzleLogic : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(lockedPlace, transform.position) < 0.33f)
+        if (Vector3.Distance(lockedPlace, transform.position) < 0.33f && IsOwnedByServer && transform.parent != null)
         {
             transform.position = lockedPlace;
             transform.eulerAngles = lockedRotation;
