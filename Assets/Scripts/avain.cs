@@ -27,6 +27,7 @@ public class avain : MonoBehaviour
             {
                 piece.isKinematic = false;
             }
+            Debug.Log("boxi aukee");
         }
     }
 }
