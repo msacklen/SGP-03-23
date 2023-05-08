@@ -45,6 +45,11 @@ public class NetworkPlayer : NetworkBehaviour
                 floor.GetComponent<TeleportationArea>().teleportationProvider = GetComponent<TeleportationProvider>();
             }
         }
+
+        if(sceneEvent.SceneEventType == SceneEventType.LoadEventCompleted && sceneEvent.Scene.name == "Apartment")
+        {
+            GameObject.Find("Timer").SetActive(true);
+        }
     }
 
     public void DisableClientInput()
