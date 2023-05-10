@@ -16343,6 +16343,7 @@ GameObject:
   - component: {fileID: 4276822364648596825}
   - component: {fileID: 4276822364648596826}
   - component: {fileID: 4276822364648596827}
+  - component: {fileID: 4276822364648596828}
   m_Layer: 0
   m_Name: maanantai
   m_TagString: Untagged
@@ -17950,6 +17951,7 @@ GameObject:
   - component: {fileID: 2835784184082145547}
   - component: {fileID: 2835784184082145549}
   - component: {fileID: 2835784184082145550}
+  - component: {fileID: 2835784184082145551}
   m_Layer: 0
   m_Name: torstai
   m_TagString: Untagged
@@ -18371,6 +18373,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6c0be61502bb534f922ebb746851216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!64 &2835784184082145551
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2668387248000993977}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 9070099929109034208, guid: 87b0b8cfdf7d5b244ad384bfad88501e, type: 3}
 --- !u!23 &2869916514868030227
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20580,6 +20596,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6c0be61502bb534f922ebb746851216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!64 &4276822364648596828
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619015828325035943}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1619123872104519148, guid: 87b0b8cfdf7d5b244ad384bfad88501e, type: 3}
 --- !u!4 &4296221319128994503
 Transform:
   m_ObjectHideFlags: 0
@@ -22669,6 +22699,7 @@ GameObject:
   - component: {fileID: 5711118398357857818}
   - component: {fileID: 5711118398357857819}
   - component: {fileID: 5711118398357857820}
+  - component: {fileID: 5711118398357857821}
   m_Layer: 0
   m_Name: perjantai
   m_TagString: Untagged
@@ -22949,6 +22980,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6c0be61502bb534f922ebb746851216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!64 &5711118398357857821
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5711118398357857811}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 793182918691404584, guid: 87b0b8cfdf7d5b244ad384bfad88501e, type: 3}
 --- !u!1 &5730330253178457206
 GameObject:
   m_ObjectHideFlags: 0
@@ -23704,6 +23749,7 @@ GameObject:
   - component: {fileID: 5955914091812114994}
   - component: {fileID: 5955914091812114995}
   - component: {fileID: 5955914091812114996}
+  - component: {fileID: 5955914091812114997}
   m_Layer: 0
   m_Name: sunnuntai
   m_TagString: Untagged
@@ -23984,6 +24030,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6c0be61502bb534f922ebb746851216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!64 &5955914091812114997
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5955914091812114987}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5218549406124686175, guid: 87b0b8cfdf7d5b244ad384bfad88501e, type: 3}
 --- !u!4 &5965317603867714488
 Transform:
   m_ObjectHideFlags: 0
@@ -27829,6 +27889,7 @@ GameObject:
   - component: {fileID: 8482888121879511028}
   - component: {fileID: 8482888121879511029}
   - component: {fileID: 8482888121879511030}
+  - component: {fileID: 8482888121879511031}
   m_Layer: 0
   m_Name: keskiviikko
   m_TagString: Untagged
@@ -30515,6 +30576,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6c0be61502bb534f922ebb746851216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!64 &8482888121879511031
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7758200070724519200}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8371621215073410091, guid: 87b0b8cfdf7d5b244ad384bfad88501e, type: 3}
 --- !u!4 &8513683512559694191
 Transform:
   m_ObjectHideFlags: 0
