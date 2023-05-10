@@ -20,6 +20,9 @@ public class Timer : NetworkBehaviour
         float fMinutes = (roundedTime - fSeconds) / 60;
         string sMinutes = fMinutes.ToString();
 
+        if (sSeconds.Length == 1) sSeconds = "0" + sSeconds;
+        if (sMinutes.Length == 1) sMinutes = "0" + sMinutes;
+
         if (fSeconds % 2 == 0)
         {
             timeText = sMinutes + ":" + sSeconds;
