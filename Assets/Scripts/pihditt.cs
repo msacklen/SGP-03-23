@@ -24,7 +24,6 @@ public class pihditt : NetworkBehaviour
         if (Vector3.Distance(transform.position, paikkaavaimelle.position) < 0.1f && isActivated == true)
         {
             GetComponent<XRGrabInteractable>().enabled = true;
-            transform.parent = pihdit;
             transform.position = paikkaavaimelle.position;
             rb.isKinematic = true;
             if (!IsOwner)
