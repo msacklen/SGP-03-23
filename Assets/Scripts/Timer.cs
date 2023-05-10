@@ -2,18 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Unity.Netcode;
 
-public class Timer : MonoBehaviour
+public class Timer : NetworkBehaviour
 {
     [SerializeField] TMP_Text timerText;
-    float time = 3600f;
+    NetworkVariable<float> time = new NetworkVariable<float>(3600f, NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Server);
 
     private void Update()
     {
-        time -= Time.deltaTime;
+        if (IsHost) time.Value -= Time.deltaTime;
         string timeText;
 
-        float roundedTime = Mathf.Round(time);
+        float roundedTime = Mathf.Round(time.Value);
         float fSeconds = roundedTime % 60;
         string sSeconds = fSeconds.ToString();
         float fMinutes = (roundedTime - fSeconds) / 60;
