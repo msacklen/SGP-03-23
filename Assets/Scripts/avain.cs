@@ -5,21 +5,23 @@ using Unity.Netcode;
 
 public class avain : NetworkBehaviour
 {
-    [SerializeField] private GameObject lid;
+    [SerializeField] GameObject puzzleBox;
+    [SerializeField] GameObject puzzleAvain;
     [SerializeField] GameObject highlight;
+
     private void Start()
     {
         
     }
     void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.name == "Key")
+        if (collision.gameObject == puzzleAvain)
         {
             GameObject _hilight = Instantiate(highlight, highlight.transform.position, Quaternion.identity);
             NetworkObject _hilightNO = _hilight.GetComponent<NetworkObject>();
             if (IsHost) _hilightNO.Spawn();
 
-            NetworkManager.Destroy(lid.transform.parent.gameObject);
+            NetworkManager.Destroy(puzzleBox);
 
             GameObject[] pieces = GameObject.FindGameObjectsWithTag("Piece");
             foreach(GameObject piece in pieces)
