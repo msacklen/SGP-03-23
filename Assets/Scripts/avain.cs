@@ -15,12 +15,17 @@ public class avain : NetworkBehaviour
     {
         if (collision.gameObject.name == "Key")
         {
-            GameObject _lappu = Instantiate(highlight, highlight.transform.position, Quaternion.identity);
-            NetworkObject _lappuNO = _lappu.GetComponent<NetworkObject>();
-            if (IsHost) _lappuNO.Spawn();
+            GameObject _hilight = Instantiate(highlight, highlight.transform.position, Quaternion.identity);
+            NetworkObject _hilightNO = _hilight.GetComponent<NetworkObject>();
+            if (IsHost) _hilightNO.Spawn();
 
-            if (IsHost) NetworkManager.Destroy(lid);
+            //if (IsHost) NetworkManager.Destroy(lid);
 
+            GameObject[] pieces = GameObject.FindGameObjectsWithTag("Piece");
+            foreach(GameObject piece in pieces)
+            {
+                if (IsHost) piece.transform.position = new Vector3(0, piece.transform.position.y, piece.transform.position.z);
+            }
 
             Debug.Log("boxi aukee");
         }
