@@ -11,7 +11,7 @@ public class koodinumero : NetworkBehaviour
     {
         if (koodi.Length == 3)
         {
-            if (koodi != "743")
+            if (koodi != "783")
             {
                 foreach (Transform child in transform)
                 {
