@@ -19,7 +19,7 @@ public class avain : NetworkBehaviour
             NetworkObject _hilightNO = _hilight.GetComponent<NetworkObject>();
             if (IsHost) _hilightNO.Spawn();
 
-            //if (IsHost) NetworkManager.Destroy(lid);
+            NetworkManager.Destroy(lid);
 
             GameObject[] pieces = GameObject.FindGameObjectsWithTag("Piece");
             foreach(GameObject piece in pieces)
