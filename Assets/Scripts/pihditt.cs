@@ -28,7 +28,7 @@ public class pihditt : NetworkBehaviour
             rb.isKinematic = true;
             if (!IsOwner)
             {
-                NetworkPlayer _localPlayer = NetworkManager.Singleton.ConnectedClients[NetworkManager.Singleton.LocalClientId].PlayerObject.gameObject.GetComponent<NetworkPlayer>();
+                NetworkPlayer _localPlayer = NetworkManager.LocalClient.PlayerObject.GetComponent<NetworkPlayer>();
                 _localPlayer.RequestGrabbableOwnershipServerRpc(NetworkManager.Singleton.LocalClientId, GetComponent<NetworkObject>());
             }
         }
@@ -37,7 +37,7 @@ public class pihditt : NetworkBehaviour
             rb.isKinematic = false;
             if (IsOwner && !IsHost)
             {
-                NetworkPlayer _localPlayer = NetworkManager.Singleton.ConnectedClients[NetworkManager.Singleton.LocalClientId].PlayerObject.gameObject.GetComponent<NetworkPlayer>();
+                NetworkPlayer _localPlayer = NetworkManager.Singleton.LocalClient.PlayerObject.GetComponent<NetworkPlayer>();
                 _localPlayer.RequestGrabbableOwnershipRemoveServerRpc(GetComponent<NetworkObject>());
             }
         }
