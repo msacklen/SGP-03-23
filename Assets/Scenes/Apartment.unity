@@ -9921,7 +9921,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 25328540}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1215517768
+--- !u!114 &1215517769
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9930,9 +9930,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 380096871}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3464477cba7559c49b10282d3bacc84b, type: 3}
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 2875317470
+  AlwaysReplicateAsRoot: 0
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
 --- !u!114 &1255269906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20369,7 +20373,6 @@ GameObject:
   - component: {fileID: 6324487567974090793}
   - component: {fileID: 6324487567974090792}
   - component: {fileID: 6324487567974090794}
-  - component: {fileID: 6324487567974090795}
   m_Layer: 0
   m_Name: "keitti\xF6taso.012"
   m_TagString: Untagged
@@ -23514,18 +23517,6 @@ MonoBehaviour:
   ScaleThreshold: 0.01
   InLocalSpace: 0
   Interpolate: 1
---- !u!114 &6324487567974090795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5175623901451229493}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3464477cba7559c49b10282d3bacc84b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!33 &6334878897197462236
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -29350,30 +29341,6 @@ MonoBehaviour:
   ScaleThreshold: 0.01
   InLocalSpace: 0
   Interpolate: 1
---- !u!114 &8563695577356525593
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8563695577356525587}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3464477cba7559c49b10282d3bacc84b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &8563695577356525594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8563695577356525585}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3464477cba7559c49b10282d3bacc84b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &8564356954190688819
 Transform:
   m_ObjectHideFlags: 0
