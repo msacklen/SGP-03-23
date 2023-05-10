@@ -8245,7 +8245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3bd510facb2607498afea3e9fc99822, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotatedpuzzle: {fileID: 5375771713516918030, guid: 37434acf9c6dfdd409c7ab3b94588890,
+  rotatedpuzzle: {fileID: 2158775518383942078, guid: 7e9cf111c574d014f8c437061fd7eef3,
     type: 3}
   total: 0
 --- !u!114 &1033200813
