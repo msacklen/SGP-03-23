@@ -17,9 +17,12 @@ public class avain : NetworkBehaviour
     {
         if (collision.gameObject == puzzleAvain)
         {
-            GameObject _hilight = Instantiate(highlight, highlight.transform.position, Quaternion.identity);
-            NetworkObject _hilightNO = _hilight.GetComponent<NetworkObject>();
-            if (IsHost) _hilightNO.Spawn();
+            if (IsHost)
+            {
+                GameObject _hilight = Instantiate(highlight, highlight.transform.position, Quaternion.identity);
+                NetworkObject _hilightNO = _hilight.GetComponent<NetworkObject>();
+                _hilightNO.Spawn();
+            }
 
             NetworkManager.Destroy(puzzleBox);
 
