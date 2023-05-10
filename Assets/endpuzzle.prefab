@@ -69,8 +69,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9101425380547571158, guid: 06884674fa0183c4890ab8b7bf44d031,
         type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9101425380547571158, guid: 06884674fa0183c4890ab8b7bf44d031,
+        type: 3}
       propertyPath: m_Name
-      value: highlight 2
+      value: endpuzzle
+      objectReference: {fileID: 0}
+    - target: {fileID: 9101425380547571158, guid: 06884674fa0183c4890ab8b7bf44d031,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06884674fa0183c4890ab8b7bf44d031, type: 3}

@@ -25,7 +25,6 @@ public class puzzleLogic : NetworkBehaviour
             
             GetComponent<XRGrabInteractable>().enabled = false;
             GetComponent<puzzleLogic>().enabled = false;
-            GetComponent<MeshCollider>().enabled = false;
 
             //Debug.Log(total);
             if (IsHost) puzzle.GetComponent<universalpuzzle>().total += 1;

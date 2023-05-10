@@ -31,6 +31,7 @@ public class universalpuzzle : NetworkBehaviour
             {
                 NetworkManager.Destroy(piece);
             }
+            NetworkManager.Destroy(GameObject.Find("highlight(Clone)"));
             NetworkManager.Destroy(gameObject);
         }
     }
