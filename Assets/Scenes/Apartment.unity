@@ -8582,9 +8582,9 @@ MonoBehaviour:
   m_FirstSelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1134033274}
-        m_TargetAssemblyTypeName: spawnlappu, Assembly-CSharp
-        m_MethodName: SpawnLappu
+      - m_Target: {fileID: 8951189709816276215}
+        m_TargetAssemblyTypeName: CrutchCap, Assembly-CSharp
+        m_MethodName: OnSelectCap
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8915,20 +8915,6 @@ MonoBehaviour:
   AlwaysReplicateAsRoot: 0
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
---- !u!114 &1134033274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7046068036679973268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99f62bcb247faf34eaa06bc8326dd076, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vihjelappu: {fileID: 1922439673865095853, guid: de606bc9a938b0a4792a25934449c9b4,
-    type: 3}
 --- !u!114 &1134033275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8941,32 +8927,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6c0be61502bb534f922ebb746851216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1134033276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 357542709495927170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SyncPositionX: 1
-  SyncPositionY: 1
-  SyncPositionZ: 1
-  SyncRotAngleX: 1
-  SyncRotAngleY: 1
-  SyncRotAngleZ: 1
-  SyncScaleX: 1
-  SyncScaleY: 1
-  SyncScaleZ: 1
-  PositionThreshold: 0.001
-  RotAngleThreshold: 0.01
-  ScaleThreshold: 0.01
-  InLocalSpace: 0
-  Interpolate: 1
 --- !u!138 &1134033277
 FixedJoint:
   m_ObjectHideFlags: 0
@@ -15815,7 +15775,6 @@ GameObject:
   - component: {fileID: 1134033270}
   - component: {fileID: 1134033272}
   - component: {fileID: 1134033275}
-  - component: {fileID: 1134033276}
   m_Layer: 0
   m_Name: Underarmcrutch
   m_TagString: Untagged
@@ -23146,9 +23105,9 @@ GameObject:
   - component: {fileID: 1134033266}
   - component: {fileID: 1134033268}
   - component: {fileID: 1134033273}
-  - component: {fileID: 1134033274}
   - component: {fileID: 1134033278}
   - component: {fileID: 1134033279}
+  - component: {fileID: 8951189709816276215}
   m_Layer: 0
   m_Name: Cap
   m_TagString: Untagged
@@ -27318,6 +27277,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8951189709816276215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7046068036679973268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a684f631f2da4146a1023f40253154b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vihjelappu: {fileID: 1922439673865095853, guid: de606bc9a938b0a4792a25934449c9b4,
+    type: 3}
 --- !u!1 &8957775557524560540
 GameObject:
   m_ObjectHideFlags: 0

@@ -29,7 +29,7 @@ public class CrutchCap : NetworkBehaviour
         }
     }
 
-    public void OnSelectCap(SelectEnterEvent eventarg)
+    public void OnSelectCap()
     {
         isActivated = true;
     }
