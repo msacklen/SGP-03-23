@@ -26,7 +26,7 @@ public class universalpuzzle : NetworkBehaviour
             _lappuNO.Spawn();
 
             puzzlepieces = GameObject.FindGameObjectsWithTag("Piece");
-
+            Debug.Log(puzzlepieces.Length);
             foreach (GameObject piece in puzzlepieces)
             {
                 NetworkManager.Destroy(piece);

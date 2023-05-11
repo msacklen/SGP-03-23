@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using Unity.Netcode;
+using Unity.Netcode.Components;
 
 public class puzzleLogic : NetworkBehaviour
 {
@@ -23,18 +24,15 @@ public class puzzleLogic : NetworkBehaviour
             transform.eulerAngles = lockedRotation;
             if (IsHost) isLocked.Value = true;
 
-            GetComponent<XRGrabInteractable>().enabled = false;
-            GetComponent<puzzleLogic>().enabled = false;
-
-            //Debug.Log(total);
             if (IsHost) puzzle.GetComponent<universalpuzzle>().total += 1;
-
-            Debug.Log(puzzle.GetComponent<universalpuzzle>().total);
         }
 
         if (isLocked.Value && TryGetComponent<Rigidbody>(out Rigidbody rb))
         {
+            NetworkManager.Destroy(GetComponent<XRGrabInteractable>());
+            NetworkManager.Destroy(GetComponent<NetworkRigidbody>());
             NetworkManager.Destroy(rb);
+            NetworkManager.Destroy(GetComponent<puzzleLogic>());
         }
     }
 }
