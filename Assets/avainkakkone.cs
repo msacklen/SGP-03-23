@@ -21,14 +21,16 @@ public class avainkakkone : NetworkBehaviour
     {
         if (collision.gameObject == brailleAvain)
         {
-            GameObject _braille = Instantiate(braille, braille.transform.position, braille.transform.rotation);
-            NetworkObject _brailleNO = _braille.GetComponent<NetworkObject>();
-            if (IsHost) _brailleNO.Spawn();
+            if (IsHost)
+            {
+                GameObject _braille = Instantiate(braille, braille.transform.position, braille.transform.rotation);
+                NetworkObject _brailleNO = _braille.GetComponent<NetworkObject>();
+                if (IsHost) _brailleNO.Spawn();
 
-            GameObject _brailletext = Instantiate(brailletext, brailletext.transform.position, brailletext.transform.rotation);
-            NetworkObject _brailletextNO = _brailletext.GetComponent<NetworkObject>();
-            if (IsHost) _brailletextNO.Spawn();
-
+                GameObject _brailletext = Instantiate(brailletext, brailletext.transform.position, brailletext.transform.rotation);
+                NetworkObject _brailletextNO = _brailletext.GetComponent<NetworkObject>();
+                if (IsHost) _brailletextNO.Spawn();
+            }
 
             NetworkManager.Destroy(brailleBox);
 
