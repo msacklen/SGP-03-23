@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 7455335732867557754}
   - component: {fileID: -8308512861641741812}
   - component: {fileID: -4974162101379786980}
-  - component: {fileID: 2610053870993641810}
+  - component: {fileID: 1699630238464730951}
   m_Layer: 0
   m_Name: BrailleText
   m_TagString: Untagged
@@ -297,8 +297,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3464477cba7559c49b10282d3bacc84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!64 &2610053870993641810
-MeshCollider:
+--- !u!65 &1699630238464730951
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -307,7 +307,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2942285954357344472, guid: bc17cdcb707a48f4d83d61834dd35683, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.0020000006, y: 0.0010000006, z: 0.00012094492}
+  m_Center: {x: 0.000005640196, y: 0.00026794005, z: 0.000023325952}
