@@ -17,7 +17,7 @@ public class puzzleLogic : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(lockedPlace, transform.position) < 0.33f && IsOwnedByServer)
+        if (Vector3.Distance(lockedPlace, transform.position) < 0.33f && IsOwnedByServer && !isLocked.Value)
         {
             Debug.Log("Puzzlepiece in place");
             transform.position = lockedPlace;
@@ -25,6 +25,7 @@ public class puzzleLogic : NetworkBehaviour
 
             if (IsHost) isLocked.Value = true;
             if (IsHost) puzzle.GetComponent<universalpuzzle>().total += 1;
+
         }
 
         if (isLocked.Value && TryGetComponent<Rigidbody>(out Rigidbody rb))
