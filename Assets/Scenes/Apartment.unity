@@ -6867,6 +6867,22 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2040468215170828112}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &898678458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898678457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 3062944965
+  AlwaysReplicateAsRoot: 0
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
 --- !u!1 &924587336
 GameObject:
   m_ObjectHideFlags: 0
@@ -17333,12 +17349,6 @@ MonoBehaviour:
   puzzleAvain: {fileID: 962450476}
   highlight: {fileID: 9101425380547571158, guid: 27bab3de8fdfd9e4c92edd6d3b2d7af2,
     type: 3}
---- !u!1 &2040468215170828115 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3148759650716160957, guid: 9f9c4c88652029644b8c9fddff70b024,
-    type: 3}
-  m_PrefabInstance: {fileID: 2040468215170828112}
-  m_PrefabAsset: {fileID: 0}
 --- !u!64 &2040468215170828116
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17353,22 +17363,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 1368061016302227357, guid: b0aef7435100f2947b57e9269d48d197, type: 3}
---- !u!114 &2040468215170828117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2040468215170828115}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 4088522747
-  AlwaysReplicateAsRoot: 0
-  DontDestroyWithOwner: 0
-  AutoObjectParentSync: 1
 --- !u!114 &2040468215170828118
 MonoBehaviour:
   m_ObjectHideFlags: 0
