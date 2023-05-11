@@ -30,12 +30,12 @@ PrefabInstance:
     - target: {fileID: 8432166240297121644, guid: 06884674fa0183c4890ab8b7bf44d031,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.092
+      value: -1.156
       objectReference: {fileID: 0}
     - target: {fileID: 8432166240297121644, guid: 06884674fa0183c4890ab8b7bf44d031,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: -0.00000004371139
       objectReference: {fileID: 0}
     - target: {fileID: 8432166240297121644, guid: 06884674fa0183c4890ab8b7bf44d031,
         type: 3}
@@ -69,18 +69,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9101425380547571158, guid: 06884674fa0183c4890ab8b7bf44d031,
         type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 9101425380547571158, guid: 06884674fa0183c4890ab8b7bf44d031,
-        type: 3}
       propertyPath: m_Name
       value: endpuzzle
-      objectReference: {fileID: 0}
-    - target: {fileID: 9101425380547571158, guid: 06884674fa0183c4890ab8b7bf44d031,
-        type: 3}
-      propertyPath: m_TagString
-      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06884674fa0183c4890ab8b7bf44d031, type: 3}
