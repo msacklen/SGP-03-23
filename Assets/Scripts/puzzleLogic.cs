@@ -31,6 +31,7 @@ public class puzzleLogic : NetworkBehaviour
         {
             NetworkManager.Destroy(GetComponent<XRGrabInteractable>());
             NetworkManager.Destroy(GetComponent<NetworkRigidbody>());
+            NetworkManager.Destroy(GetComponent<InteractableObject>());
             NetworkManager.Destroy(rb);
             NetworkManager.Destroy(GetComponent<puzzleLogic>());
         }
