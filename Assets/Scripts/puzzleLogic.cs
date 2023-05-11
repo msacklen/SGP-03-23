@@ -22,8 +22,8 @@ public class puzzleLogic : NetworkBehaviour
             Debug.Log("Puzzlepiece in place");
             transform.position = lockedPlace;
             transform.eulerAngles = lockedRotation;
-            if (IsHost) isLocked.Value = true;
 
+            if (IsHost) isLocked.Value = true;
             if (IsHost) puzzle.GetComponent<universalpuzzle>().total += 1;
         }
 
@@ -33,7 +33,6 @@ public class puzzleLogic : NetworkBehaviour
             NetworkManager.Destroy(GetComponent<NetworkRigidbody>());
             NetworkManager.Destroy(GetComponent<InteractableObject>());
             NetworkManager.Destroy(rb);
-            NetworkManager.Destroy(GetComponent<puzzleLogic>());
         }
     }
 }
