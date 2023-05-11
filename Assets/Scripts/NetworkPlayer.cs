@@ -8,10 +8,8 @@ using UnityEngine.InputSystem.XR;
 public class NetworkPlayer : NetworkBehaviour
 {
     GameObject[] floors;
-    [SerializeField] Mesh[] bodyMeshes;
-    [SerializeField] Mesh[] headMeshes;
-    [SerializeField] MeshFilter bodyMeshFilter;
-    [SerializeField] MeshFilter headMeshFilter;
+    [SerializeField] GameObject body;
+    [SerializeField] GameObject head;
 
     public override void OnNetworkSpawn()
     {
@@ -76,6 +74,12 @@ public class NetworkPlayer : NetworkBehaviour
                 controller.enableInputActions = false;
                 controller.enableInputTracking = false;
             }
+        }
+
+        if (IsClient && IsOwner)
+        {
+            body.SetActive(false);
+            head.SetActive(false);
         }
     }
 
