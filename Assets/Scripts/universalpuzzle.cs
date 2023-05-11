@@ -29,7 +29,7 @@ public class universalpuzzle : NetworkBehaviour
             Debug.Log(puzzlepieces.Length);
             foreach (GameObject piece in puzzlepieces)
             {
-                NetworkManager.Destroy(piece);
+                piece.transform.Translate(new Vector3(-64,0,0));
             }
             NetworkManager.Destroy(GameObject.Find("highlight(Clone)"));
             NetworkManager.Destroy(gameObject);
