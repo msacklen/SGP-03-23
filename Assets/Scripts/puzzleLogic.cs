@@ -8,6 +8,7 @@ public class puzzleLogic : NetworkBehaviour
 {
     [SerializeField] private Vector3 lockedPlace;
     [SerializeField] private Vector3 lockedRotation = new Vector3(-90, 0, 0);
+    NetworkVariable<bool> isLocked = new NetworkVariable<bool>(false, NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Server);
 
     public GameObject puzzle;
 
@@ -20,9 +21,8 @@ public class puzzleLogic : NetworkBehaviour
             Debug.Log("Puzzlepiece in place");
             transform.position = lockedPlace;
             transform.eulerAngles = lockedRotation;
-            GetComponent<Rigidbody>().isKinematic = true;
+            if (IsHost) isLocked.Value = true;
 
-            
             GetComponent<XRGrabInteractable>().enabled = false;
             GetComponent<puzzleLogic>().enabled = false;
 
@@ -30,6 +30,11 @@ public class puzzleLogic : NetworkBehaviour
             if (IsHost) puzzle.GetComponent<universalpuzzle>().total += 1;
 
             Debug.Log(puzzle.GetComponent<universalpuzzle>().total);
+        }
+
+        if (isLocked.Value && TryGetComponent<Rigidbody>(out Rigidbody rb))
+        {
+            NetworkManager.Destroy(rb);
         }
     }
 }
