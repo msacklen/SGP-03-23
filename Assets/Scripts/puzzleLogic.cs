@@ -19,7 +19,7 @@ public class puzzleLogic : NetworkBehaviour
     {
         if (Vector3.Distance(lockedPlace, transform.position) < 0.33f && IsOwnedByServer && !isLocked.Value)
         {
-            Debug.Log("Puzzlepiece in place");
+            Debug.Log(isLocked.Value);
             transform.position = lockedPlace;
             transform.eulerAngles = lockedRotation;
 
