@@ -8,6 +8,7 @@ using UnityEngine.InputSystem.XR;
 public class NetworkPlayer : NetworkBehaviour
 {
     GameObject[] floors;
+    GameObject[] gameObjects;
     [SerializeField] GameObject body;
     [SerializeField] GameObject head;
 
@@ -15,19 +16,13 @@ public class NetworkPlayer : NetworkBehaviour
     {
         DisableClientInput();
         floors = GameObject.FindGameObjectsWithTag("Floor");
-        if (IsClient && IsOwner)
+        if (IsClient && IsOwner && floors.Length > 0)
         {
             foreach (GameObject floor in floors)
             {
                 floor.GetComponent<TeleportationArea>().teleportationProvider = GetComponent<TeleportationProvider>();
             }
         }
-
-        //if (IsHost)
-        //{
-        //    bodyMeshFilter.mesh = bodyMeshes[1];
-        //    headMeshFilter.mesh = headMeshes[0];
-        //}
 
         NetworkManager.SceneManager.OnSceneEvent += SceneEvent;
     }
@@ -38,15 +33,27 @@ public class NetworkPlayer : NetworkBehaviour
         {
             Debug.Log("New scene loaded");
             floors = GameObject.FindGameObjectsWithTag("Floor");
-            foreach (GameObject floor in floors)
+            if (floors.Length > 0)
             {
-                floor.GetComponent<TeleportationArea>().teleportationProvider = GetComponent<TeleportationProvider>();
+                foreach (GameObject floor in floors)
+                {
+                    floor.GetComponent<TeleportationArea>().teleportationProvider = GetComponent<TeleportationProvider>();
+                }
             }
         }
 
-        if(sceneEvent.SceneEventType == SceneEventType.LoadEventCompleted && sceneEvent.Scene.name == "Apartment")
+        if (sceneEvent.SceneName == "EndScreen" && sceneEvent.SceneEventType == SceneEventType.LoadComplete)
         {
-            GameObject.Find("Timer").SetActive(true);
+            gameObjects = GameObject.FindObjectsByType<GameObject>(FindObjectsSortMode.None);
+            foreach (GameObject go in gameObjects)
+            {
+                if (go.TryGetComponent<NetworkObject>(out NetworkObject no) && go.tag != "Player")
+                {
+                    NetworkManager.Destroy(go);
+                }
+
+                transform.position = new Vector3(0, 0, 0);
+            }
         }
     }
 

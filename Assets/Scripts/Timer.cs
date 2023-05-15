@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Unity.Netcode;
+using UnityEngine.SceneManagement;
 
 public class Timer : NetworkBehaviour
 {
@@ -33,5 +34,10 @@ public class Timer : NetworkBehaviour
         }
 
         timerText.text = timeText;
+
+        if (time.Value <= 0 && IsHost)
+        {
+            NetworkManager.SceneManager.LoadScene("EndScreen", LoadSceneMode.Single);
+        }
     }
 }
